@@ -2,7 +2,8 @@
 
 The house site: coaching, photography, the atelier. Plain HTML and CSS, no build step needed to serve it.
 
-- `index.html`, `coaching.html`, `photography.html`, `atelier.html`, `about.html`: the pages
+- `index.html`, `coaching.html`, `photography.html`, `atelier.html`, `letter.html`, `about.html`: the English pages
+- `nl/`: the same six pages in Dutch
 - `css/site.css`: the design (white, pastel blue and green, sea-green ink, one gold fine line; never black)
 - `assets/`: the crest and the fonts (Cormorant Garamond, Inter), hosted here
 - `tools/build.py`: all the words live here. Edit, run `python3 tools/build.py`, commit.
