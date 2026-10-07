@@ -35,7 +35,7 @@ def page(slug, title, desc, rail, body):
 <a class="skip" href="#main">Skip to the text</a>
 <div class="wrap">
 <header class="top">
-  <a class="mark" href="index.html">L&rsquo;arte dell&rsquo;amore</a>
+  <a class="mark" href="index.html"><img src="assets/crest-small.png" alt="" width="360" height="476">L&rsquo;arte dell&rsquo;amore</a>
   <nav aria-label="Pages">{nav}</nav>
 </header>
 <div class="page">
