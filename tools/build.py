@@ -85,7 +85,6 @@ def contact(line, lang="en"):
 SUBSCRIBE = f"mailto:{EMAIL}?subject=Subscribe%20to%20The%20Letter"
 
 HOME = f"""    <section class="crest" aria-labelledby="h-t">
-      <img src="assets/crest.webp" width="1100" height="1456" alt="The crest of L'arte dell'amore: a winged shield bearing three flaming hearts on a cross, a sword behind it, and a ribbon with the name.">
       <p class="eyebrow">Amsterdam &middot; coaching, photography, and things made by hand and by code</p>
       <h1 class="display" id="h-t">Charity is the <em>crown</em> of life.</h1>
       <p class="lede">L&rsquo;arte dell&rsquo;amore is a small house with a large hope: that you may see your life whole, and learn to spend it on love. I am still learning this myself, which is why the door is open.</p>
@@ -365,7 +364,6 @@ ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
 ABONNEER = f"mailto:{EMAIL}?subject=Aanmelden%20voor%20De%20Brief"
 
 NL_HOME = f"""    <section class="crest" aria-labelledby="h-t">
-      <img src="../assets/crest.webp" width="1100" height="1456" alt="Het wapen van L'arte dell'amore: een gevleugeld schild met drie vlammende harten op een kruis, een zwaard erachter en een lint met de naam.">
       <p class="eyebrow">Amsterdam &middot; coaching, fotografie, en dingen gemaakt met de hand en met code</p>
       <h1 class="display" id="h-t">De liefde is de <em>kroon</em> van het leven.</h1>
       <p class="lede">L&rsquo;arte dell&rsquo;amore is een klein huis met een grote hoop: dat je je leven als &eacute;&eacute;n geheel mag zien, en leert het aan liefde te besteden. Ik leer dat zelf ook nog, en daarom staat de deur open.</p>
