@@ -113,7 +113,7 @@ HOME = f"""    <section class="crest" aria-labelledby="h-t">
         <li><span class="n">iii</span><a class="t" href="photography.html">Photography</a><span class="state open">Open</span><span class="d">Weddings, engagements, families and portraits. From &euro;195.</span></li>
         <li><span class="n">iv</span><a class="t" href="letter.html">The Letter</a><span class="state open">Free</span><span class="d">Once a week: one thing for the body, one for the mind, one story for the soul.</span></li>
         <li><span class="n">v</span><a class="t" href="atelier.html#digital">Digital products</a><span class="state">In the making</span><span class="d">Catholicity OS for Notion, and Catholic Healing Arts.</span></li>
-        <li><span class="n">vi</span><a class="t" href="atelier.html#prints">Art prints and gifts</a><span class="state">In the making</span><span class="d">Gold fine line on natural paper; ethical and sustainably produced clothing.</span></li>
+        <li><span class="n">vi</span><a class="t" href="atelier.html#gifts">Clothing and art prints</a><span class="state open">Open</span><span class="d">Illuminated Heart: ethical and sustainably produced clothing. Art prints in gold fine line are in the making.</span></li>
         <li><span class="n">vii</span><a class="t" href="atelier.html#apps">Apps</a><span class="state">In the making</span><span class="d">Global Holy Rosary, Beatitude, Eternal Camino.</span></li>
       </ol>
     </section>
@@ -198,7 +198,7 @@ PHOTO = f"""    <section class="sec" aria-labelledby="h-t">
 ATELIER = f"""    <section class="sec" aria-labelledby="h-t">
       <p class="eyebrow">Atelier</p>
       <h1 class="display" id="h-t">Made slowly, <em>for keeps</em>.</h1>
-      <p class="lede">Tools, prints and gifts from the same house. One is open today. The rest are in the making, and I would sooner tell you that than pretend otherwise.</p>
+      <p class="lede">Tools, prints and gifts from the same house. Two are open today. The rest are in the making, and I would sooner tell you that than pretend otherwise.</p>
     </section>
 
     <section class="sec" aria-labelledby="il-t">
@@ -242,9 +242,13 @@ ATELIER = f"""    <section class="sec" aria-labelledby="h-t">
 
     <section class="sec" id="gifts" aria-labelledby="gf-t">
       <span class="rule" aria-hidden="true"></span>
-      <p class="eyebrow">In the making</p>
-      <h2 class="h2" id="gf-t">Gifts</h2>
-      <p class="prose">Ethical and sustainably produced clothing.</p>
+      <p class="eyebrow">Open</p>
+      <h2 class="h2" id="gf-t">Illuminated Heart</h2>
+      <div class="prose">
+        <p>Ethical and sustainably produced clothing, printed to order so nothing is made that nobody wants. Proceeds help build the Family of Pure Grace home in Bugiri, Uganda.</p>
+        <p class="small">The shop is run with Teemill, which prints and ships each order. Prices there are in pounds sterling.</p>
+      </div>
+      <div class="row"><a class="btn" href="https://illuminated-heart.teemill.com/" rel="noopener">Visit the shop</a><a href="https://illuminated-heart.teemill.com/collection/all-clothing-men/" rel="noopener">Men</a><a href="https://illuminated-heart.teemill.com/men-woman-collection-landing-page/" rel="noopener">Women</a><a href="https://illuminated-heart.teemill.com/collection/children/" rel="noopener">Children</a></div>
     </section>
 
 {contact("Ask to be told when something opens.")}"""
@@ -393,7 +397,7 @@ NL_HOME = f"""    <section class="crest" aria-labelledby="h-t">
         <li><span class="n">iii</span><a class="t" href="photography.html">Fotografie</a><span class="state open">Open</span><span class="d">Bruiloften, verlovingen, gezinnen en portretten. Vanaf &euro;195.</span></li>
         <li><span class="n">iv</span><a class="t" href="letter.html">De Brief</a><span class="state open">Gratis</span><span class="d">Eens per week: iets voor het lichaam, iets voor de geest, een verhaal voor de ziel.</span></li>
         <li><span class="n">v</span><a class="t" href="atelier.html#digital">Digitale producten</a><span class="state">In de maak</span><span class="d">Catholicity OS voor Notion, en Catholic Healing Arts.</span></li>
-        <li><span class="n">vi</span><a class="t" href="atelier.html#prints">Kunstprints en geschenken</a><span class="state">In de maak</span><span class="d">Een fijne gouden lijn op natuurlijk papier; ethisch en duurzaam geproduceerde kleding.</span></li>
+        <li><span class="n">vi</span><a class="t" href="atelier.html#gifts">Kleding en kunstprints</a><span class="state open">Open</span><span class="d">Illuminated Heart: ethisch en duurzaam geproduceerde kleding. Kunstprints in een fijne gouden lijn zijn in de maak.</span></li>
         <li><span class="n">vii</span><a class="t" href="atelier.html#apps">Apps</a><span class="state">In de maak</span><span class="d">Global Holy Rosary, Beatitude, Eternal Camino.</span></li>
       </ol>
     </section>
@@ -478,7 +482,7 @@ NL_PHOTO = f"""    <section class="sec" aria-labelledby="h-t">
 NL_ATELIER = f"""    <section class="sec" aria-labelledby="h-t">
       <p class="eyebrow">Atelier</p>
       <h1 class="display" id="h-t">Met aandacht gemaakt, <em>om te bewaren</em>.</h1>
-      <p class="lede">Hulpmiddelen, prints en geschenken uit hetzelfde huis. E&eacute;n ervan is nu open. De rest is in de maak, en dat zeg ik liever dan dat ik doe alsof.</p>
+      <p class="lede">Hulpmiddelen, prints en geschenken uit hetzelfde huis. Twee ervan zijn nu open. De rest is in de maak, en dat zeg ik liever dan dat ik doe alsof.</p>
     </section>
 
     <section class="sec" aria-labelledby="il-t">
@@ -522,9 +526,13 @@ NL_ATELIER = f"""    <section class="sec" aria-labelledby="h-t">
 
     <section class="sec" id="gifts" aria-labelledby="gf-t">
       <span class="rule" aria-hidden="true"></span>
-      <p class="eyebrow">In de maak</p>
-      <h2 class="h2" id="gf-t">Geschenken</h2>
-      <p class="prose">Ethisch en duurzaam geproduceerde kleding.</p>
+      <p class="eyebrow">Open</p>
+      <h2 class="h2" id="gf-t">Illuminated Heart</h2>
+      <div class="prose">
+        <p>Ethisch en duurzaam geproduceerde kleding, op bestelling gedrukt, zodat er niets wordt gemaakt wat niemand wil. De opbrengst helpt het huis van Family of Pure Grace in Bugiri, Oeganda, te bouwen.</p>
+        <p class="small">De winkel draait bij Teemill, dat elke bestelling drukt en verstuurt. De winkel is in het Engels en de prijzen staan in Britse ponden.</p>
+      </div>
+      <div class="row"><a class="btn" href="https://illuminated-heart.teemill.com/" rel="noopener">Naar de winkel</a><a href="https://illuminated-heart.teemill.com/collection/all-clothing-men/" rel="noopener">Heren</a><a href="https://illuminated-heart.teemill.com/men-woman-collection-landing-page/" rel="noopener">Dames</a><a href="https://illuminated-heart.teemill.com/collection/children/" rel="noopener">Kinderen</a></div>
     </section>
 
 {contact("Vraag me om een seintje zodra er iets opengaat.", "nl")}"""
