@@ -18,7 +18,7 @@ T = {
                write="Write to me", answer="I answer within two working days, in English or Dutch. Slower on feast days and powder days.",
                other="Nederlands", other_code="nl", pages="Pages", footer="Footer"),
     "nl": dict(nav=["Het huis", "Coaching", "Fotografie", "Atelier", "De Brief", "Over mij"],
-               skip="Ga naar de tekst", foot="De liefde is de kroon van het leven.", contact="Contact",
+               skip="Ga naar de tekst", foot="Liefdadigheid is de kroon van het leven.", contact="Contact",
                write="Schrijf me", answer="Ik antwoord binnen twee werkdagen, in het Nederlands of Engels. Iets trager op feestdagen en bij poedersneeuw.",
                other="English", other_code="en", pages="Pagina's", footer="Voettekst"),
 }
@@ -145,6 +145,7 @@ COACHING = f"""    <section class="sec" aria-labelledby="h-t">
         <dt>Single session</dt><dd><b>&euro;95</b> &middot; 60 minutes, online or in Amsterdam.</dd>
         <dt>A season together</dt><dd><b>&euro;540</b> &middot; three months, six sessions, with short messages in between. This is where real change usually happens.</dd>
       </dl>
+      <p class="small">Fees include VAT.</p>
       <p class="small">If the fee is the only thing standing between you and help, write to me anyway. I will find a way with you.</p>
     </section>
 
@@ -189,7 +190,7 @@ PHOTO = f"""    <section class="sec" aria-labelledby="h-t">
         <dt>Portraits</dt><dd><b>&euro;195</b> &middot; A personal portrait that looks like you on a good day, which is the truth.</dd>
         <dt>Business portraits</dt><dd><b>&euro;245</b> &middot; Authentic, professional headshots for your work.</dd>
       </dl>
-      <p class="small">Prices are in euros. Travel within Amsterdam is included; further afield, I agree it with you beforehand.</p>
+      <p class="small">Prices are in euros and include VAT. Travel within Amsterdam is included; further afield, I agree it with you beforehand.</p>
     </section>
 
 {contact("Tell me about your day.")}"""
@@ -365,7 +366,7 @@ ABONNEER = f"mailto:{EMAIL}?subject=Aanmelden%20voor%20De%20Brief"
 
 NL_HOME = f"""    <section class="crest" aria-labelledby="h-t">
       <p class="eyebrow">Amsterdam &middot; coaching, fotografie, en dingen die met de hand en met code zijn gemaakt</p>
-      <h1 class="display" id="h-t">De liefde is de <em>kroon</em> van het leven.</h1>
+      <h1 class="display" id="h-t">Liefdadigheid is de <em>kroon</em> van het leven.</h1>
       <p class="lede">L&rsquo;arte dell&rsquo;amore is een klein huis met een grote hoop: dat je je leven als &eacute;&eacute;n geheel mag zien, en het leert besteden aan de liefde. Ik leer dat zelf ook nog, en daarom staat de deur open.</p>
     </section>
 
@@ -389,7 +390,7 @@ NL_HOME = f"""    <section class="crest" aria-labelledby="h-t">
       <ol class="index">
         <li><span class="n">i</span><a class="t" href="{APP}" rel="noopener">Illuminated Life</a><span class="state open">Open</span><span class="d">Een leefregel over twaalf velden van rentmeesterschap. Geen streaks, geen punten; de heiligen redden het ook zonder ranglijst. (De app is in het Engels.)</span></li>
         <li><span class="n">ii</span><a class="t" href="coaching.html">Gezondheids- en leefstijlcoaching</a><span class="state open">Open</span><span class="d">E&eacute;n op &eacute;&eacute;n, online of in Amsterdam. Vanaf &euro;95 per sessie.</span></li>
-        <li><span class="n">iii</span><a class="t" href="photography.html">Fotografie</a><span class="state open">Open</span><span class="d">Bruiloften, loveshoots, gezinnen en portretten. Vanaf &euro;195.</span></li>
+        <li><span class="n">iii</span><a class="t" href="photography.html">Fotografie</a><span class="state open">Open</span><span class="d">Bruiloften, verlovingen, gezinnen en portretten. Vanaf &euro;195.</span></li>
         <li><span class="n">iv</span><a class="t" href="letter.html">De Brief</a><span class="state open">Gratis</span><span class="d">Eens per week: iets voor het lichaam, iets voor de geest, een verhaal voor de ziel.</span></li>
         <li><span class="n">v</span><a class="t" href="atelier.html#digital">Digitale producten</a><span class="state">In de maak</span><span class="d">Catholicity OS voor Notion, en Catholic Healing Arts.</span></li>
         <li><span class="n">vi</span><a class="t" href="atelier.html#prints">Kunstprints en geschenken</a><span class="state">In de maak</span><span class="d">Een fijne gouden lijn op natuurlijk papier; ethisch en duurzaam geproduceerde kleding.</span></li>
@@ -424,6 +425,7 @@ NL_COACHING = f"""    <section class="sec" aria-labelledby="h-t">
         <dt>Losse sessie</dt><dd><b>&euro;95</b> &middot; 60 minuten, online of in Amsterdam.</dd>
         <dt>Een seizoen samen</dt><dd><b>&euro;540</b> &middot; een traject van drie maanden, zes sessies, met korte berichten tussendoor. Hier vindt de echte verandering meestal plaats.</dd>
       </dl>
+      <p class="small">Tarieven zijn inclusief btw.</p>
       <p class="small">Is het tarief het enige wat tussen jou en hulp in staat? Schrijf me toch. Dan zoek ik met je naar een oplossing.</p>
     </section>
 
@@ -451,7 +453,7 @@ NL_PHOTO = f"""    <section class="sec" aria-labelledby="h-t">
       <h2 class="h2" id="g-t">Portfolio</h2>
       <div class="mounts">
         <div class="mount wide"><span>Bruiloft</span></div>
-        <div class="mount"><span>Loveshoot</span></div>
+        <div class="mount"><span>Verlovingsreportage</span></div>
         <div class="mount"><span>Gezin</span></div>
         <div class="mount"><span>Portret</span></div>
         <div class="mount"><span>Zakelijk portret</span></div>
@@ -463,12 +465,12 @@ NL_PHOTO = f"""    <section class="sec" aria-labelledby="h-t">
       <h2 class="h2" id="s-t">Wat ik fotografeer, en wat het kost</h2>
       <dl class="terms">
         <dt>Bruiloften</dt><dd><b>&euro;1.950</b> &middot; Een bruidsreportage van de hele dag, van de stilte vooraf tot de laatste dans. Jullie ontvangen de volledige bewerkte galerij.</dd>
-        <dt>Loveshoots</dt><dd><b>&euro;295</b> &middot; Een uur of twee op een plek die voor jullie iets betekent. Meteen een ontspannen generale repetitie voor de bruiloft.</dd>
+        <dt>Verlovingsreportages</dt><dd><b>&euro;295</b> &middot; Een uur of twee op een plek die voor jullie iets betekent. Meteen een ontspannen generale repetitie voor de bruiloft.</dd>
         <dt>Gezinnen</dt><dd><b>&euro;325</b> &middot; Thuis of buiten, ook newborn en zwangerschap. Kinderen mogen precies zijn zoals ze zijn.</dd>
         <dt>Portretten</dt><dd><b>&euro;195</b> &middot; Een persoonlijk portret waarop je eruitziet zoals op een goede dag, en dat is de waarheid.</dd>
         <dt>Zakelijke portretten</dt><dd><b>&euro;245</b> &middot; Professionele portretten voor je werk, waarop je jezelf herkent.</dd>
       </dl>
-      <p class="small">Prijzen in euro&rsquo;s. Reiskosten binnen Amsterdam zijn inbegrepen; daarbuiten spreek ik ze vooraf met je af.</p>
+      <p class="small">Prijzen in euro&rsquo;s, inclusief btw. Reiskosten binnen Amsterdam zijn inbegrepen; daarbuiten spreek ik ze vooraf met je af.</p>
     </section>
 
 {contact("Vertel me over jullie dag.", "nl")}"""
@@ -593,7 +595,7 @@ NL_ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
 
     <section class="sec" aria-labelledby="f-t">
       <span class="rule" aria-hidden="true"></span>
-      <p class="eyebrow">Naastenliefde</p>
+      <p class="eyebrow">Liefdadigheid</p>
       <h2 class="h2" id="f-t">Family of Pure Grace</h2>
       <div class="panel">
         <p class="lede">Een thuis voor weeskinderen in Bugiri, Oeganda.</p>
@@ -610,7 +612,7 @@ NL_ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
       <h2 class="h2" id="b-t">Wat ik geloof</h2>
       <div class="prose">
         <p>Ieder mens draagt een waardigheid die gegeven is, nooit verdiend. Geen succes voegt eraan toe en geen mislukking neemt haar weg. Een goed leven is &eacute;&eacute;n leven, waarin lichaam, geest, hart, huis en werk hetzelfde doel dienen.</p>
-        <p>De liefde is de kroon van dat leven. Alles wat in dit huis gemaakt wordt, wil iemand helpen een beetje beter lief te hebben: een uur coaching, een foto van de mensen van wie je houdt, een hulpmiddel dat je dag op orde houdt. In het donker vormt God goud. Ik heb gemerkt dat het waar is, en van daaruit werk ik.</p>
+        <p>Liefdadigheid is de kroon van dat leven. Alles wat in dit huis gemaakt wordt, wil iemand helpen een beetje beter lief te hebben: een uur coaching, een foto van de mensen van wie je houdt, een hulpmiddel dat je dag op orde houdt. In het donker vormt God goud. Ik heb gemerkt dat het waar is, en van daaruit werk ik.</p>
       </div>
     </section>
 
@@ -627,7 +629,7 @@ NL_ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
       </div>
       <dl class="terms">
         <dt>Menselijke waardigheid</dt><dd>Ieder mens heeft een waarde die gegeven is, niet verdiend, en die geen omstandigheid kan wegnemen.</dd>
-        <dt>Liefde</dt><dd>Liefde die het goede voor de ander doet, is de maat van alles wat ik maak. De liefde is de kroon van het leven.</dd>
+        <dt>Liefdadigheid</dt><dd>Liefde die het goede voor de ander doet, is de maat van alles wat ik maak. Liefdadigheid is de kroon van het leven.</dd>
         <dt>Waarheid</dt><dd>Ik begin met eerlijk zelfonderzoek en vertel mensen de waarheid, met zachtheid.</dd>
         <dt>Integrale ontwikkeling</dt><dd>Ik dien de hele mens: lichaam, geest, hart, huis, werk en ziel.</dd>
         <dt>Solidariteit met de armen</dt><dd>Mijn werk is niet af zolang het de mensen die het minst hebben niet bereikt.</dd>
@@ -647,7 +649,7 @@ PAGES = [
     ("about.html", "About · L'arte dell'amore", "Wietske, holistic health coach and photographer in Amsterdam.", "About &nbsp;&middot;&nbsp; <b>Wietske</b>", ABOUT, "en"),
     ("index.html", "L'arte dell'amore", "Coaching, fotografie en hulpmiddelen voor een leven gericht op liefde. Amsterdam.", "L&rsquo;arte dell&rsquo;amore &nbsp;&middot;&nbsp; <b>Amsterdam</b>", NL_HOME, "nl"),
     ("coaching.html", "Coaching · L'arte dell'amore", "Holistische gezondheids- en leefstijlcoaching, één op één, online of in Amsterdam. Vanaf 95 euro per sessie.", "Coaching &nbsp;&middot;&nbsp; <b>&eacute;&eacute;n op &eacute;&eacute;n</b>", NL_COACHING, "nl"),
-    ("photography.html", "Fotografie · L'arte dell'amore", "Bruidsfotografie, loveshoots, gezins- en portretfotografie vanuit Amsterdam.", "Fotografie &nbsp;&middot;&nbsp; <b>natuurlijk licht</b>", NL_PHOTO, "nl"),
+    ("photography.html", "Fotografie · L'arte dell'amore", "Bruidsfotografie, verlovingsreportages, gezins- en portretfotografie vanuit Amsterdam.", "Fotografie &nbsp;&middot;&nbsp; <b>natuurlijk licht</b>", NL_PHOTO, "nl"),
     ("atelier.html", "Atelier · L'arte dell'amore", "Illuminated Life, digitale producten, apps, kunstprints en geschenken.", "Atelier &nbsp;&middot;&nbsp; <b>met aandacht gemaakt</b>", NL_ATELIER, "nl"),
     ("letter.html", "De Brief · L'arte dell'amore", "Een gratis wekelijkse brief voor lichaam, geest en ziel.", "De Brief &nbsp;&middot;&nbsp; <b>wekelijks</b>", NL_LETTER, "nl"),
     ("about.html", "Over mij · L'arte dell'amore", "Wietske, holistisch gezondheidscoach en fotograaf in Amsterdam.", "Over mij &nbsp;&middot;&nbsp; <b>Wietske</b>", NL_ABOUT, "nl"),
