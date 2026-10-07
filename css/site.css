@@ -1,5 +1,5 @@
 /* L'arte dell'amore · the house site
-   Layout: rice-paper ground, one narrow column set off-centre to the right of a vertical name rail;
+   Layout: white ground with pastel sky and leaf, one narrow column set off-centre to the right of a vertical name rail;
    wide empty margins carry the Japanese half, a single gold fine line and the crest carry the baroque half. */
 
 @font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/fonts/cormorant-garamond-latin-400-normal.woff2") format("woff2"); }
@@ -9,31 +9,22 @@
 @font-face { font-family: "Inter"; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/fonts/inter-latin-500-normal.woff2") format("woff2"); }
 
 :root {
-  --paper: #FAF9F5;      /* washi */
-  --linen: #F1EEE6;      /* undyed linen, for quiet panels */
-  --ink: #23211D;        /* sumi */
-  --ink2: #55514A;
-  --dim: #7A756C;
+  /* one light look, by choice: white ground, pastel sky and leaf, sea-green ink. No black anywhere. */
+  --paper: #FFFFFF;
+  --linen: #EEF6FB;      /* pastel sky, for quiet panels */
+  --leaf: #EAF4EC;       /* pastel green */
+  --ink: #2C5A60;        /* deep sea green, the darkest tone on the site */
+  --ink2: #446E73;
+  --dim: #55797D;
   --gold: #B08A34;       /* the fineliner */
-  --gold-ink: #7C5F1C;   /* gold that passes contrast as text */
+  --gold-ink: #7C5F1C;
   --gold-pale: #DDCFA6;
-  --line: #E4DFD2;
-  --focus: #7C5F1C;
+  --line: #D6E6EE;
+  --focus: #2C5A60;
   --serif: "Cormorant Garamond", "Iowan Old Style", Palatino, Georgia, serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --col: 38rem;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #161512; --linen: #1F1D19; --ink: #EFEBE1; --ink2: #C9C3B5; --dim: #9C968A;
-    --gold: #C9A75A; --gold-ink: #DDBF7A; --gold-pale: #5E5030; --line: #2E2B25; --focus: #DDBF7A;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --paper: #161512; --linen: #1F1D19; --ink: #EFEBE1; --ink2: #C9C3B5; --dim: #9C968A;
-  --gold: #C9A75A; --gold-ink: #DDBF7A; --gold-pale: #5E5030; --line: #2E2B25; --focus: #DDBF7A;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
@@ -45,13 +36,14 @@ a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
 h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; text-wrap: balance; letter-spacing: -0.005em; }
 p { margin: 0; text-wrap: pretty; }
-.skip { position: absolute; left: 12px; top: -80px; background: var(--ink); color: var(--paper); padding: 10px 16px; z-index: 10; }
+.skip { position: absolute; left: 12px; top: -80px; background: var(--leaf); color: var(--ink); padding: 10px 16px; z-index: 10; }
 .skip:focus { top: 10px; }
 
 /* ── frame ── */
 .wrap { max-width: 68rem; margin: 0 auto; padding-inline: clamp(18px, 5vw, 56px); }
-.top { display: flex; align-items: baseline; justify-content: space-between; gap: 16px 28px; flex-wrap: wrap; padding-block: 26px 22px; border-bottom: 1px solid var(--line); }
-.mark { font-family: var(--serif); font-style: italic; font-size: 25px; color: var(--ink); text-decoration: none; white-space: nowrap; }
+.top { display: flex; align-items: center; justify-content: space-between; gap: 16px 28px; flex-wrap: wrap; padding-block: 26px 22px; border-bottom: 1px solid var(--line); }
+.mark { display: inline-flex; align-items: center; gap: 14px; font-family: var(--serif); font-style: italic; font-size: 25px; color: var(--ink); text-decoration: none; white-space: nowrap; }
+.mark img { height: 64px; width: auto; }
 .top nav { display: flex; flex-wrap: wrap; gap: 6px 26px; }
 .top nav a { font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink2); text-decoration: none; padding-block: 8px; border-bottom: 1px solid transparent; }
 .top nav a:hover, .top nav a[aria-current="page"] { color: var(--gold-ink); border-bottom-color: var(--gold); }
@@ -111,7 +103,7 @@ a.t:hover { color: var(--gold-ink); }
 .steps span { color: var(--ink2); }
 
 .btn { display: inline-flex; align-items: center; min-height: 48px; padding: 12px 26px; border: 1px solid var(--gold); color: var(--ink); background: transparent; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; transition: background-color 0.2s, color 0.2s; }
-.btn:hover { background: var(--gold); color: #16130B; }
+.btn:hover { background: var(--leaf); color: var(--ink); }
 .row { display: flex; flex-wrap: wrap; gap: 14px 24px; align-items: center; }
 .addr { font-family: var(--serif); font-size: 23px; color: var(--ink); user-select: all; overflow-wrap: anywhere; }
 
@@ -119,6 +111,7 @@ a.t:hover { color: var(--gold-ink); }
 .mounts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 .mount { aspect-ratio: 4 / 5; max-width: 100%; background: var(--linen); border: 1px solid var(--line); display: grid; place-items: center; padding: 14px; overflow: hidden; }
 .mount.wide { grid-column: 1 / -1; aspect-ratio: 3 / 2; }
+.mount:nth-child(even) { background: var(--leaf); }
 .mount img { width: 100%; height: 100%; object-fit: cover; }
 .mount span { font-family: var(--serif); font-style: italic; font-size: 17px; color: var(--dim); text-align: center; }
 
