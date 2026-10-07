@@ -287,6 +287,7 @@ ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
       <p class="eyebrow">About</p>
       <h1 class="display" id="h-t">The art of <em>love</em>, practised.</h1>
       <p class="lede">I am Wietske: a health and lifestyle coach, a photographer, and a lifelong student of the human heart. I am not finished, which I have come to see as good news.</p>
+      <figure class="portrait"><img src="assets/wietske.webp" width="900" height="1035" alt="Wietske, smiling, in a linen jacket and a white headband."></figure>
     </section>
 
     <section class="sec" aria-labelledby="l-t">
@@ -571,6 +572,7 @@ NL_ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
       <p class="eyebrow">Over mij</p>
       <h1 class="display" id="h-t">De kunst van de <em>liefde</em>, in de praktijk.</h1>
       <p class="lede">Ik ben Wietske: gezondheids- en leefstijlcoach, fotograaf, en levenslang leerling van het menselijk hart. Ik ben niet af, en dat ben ik als goed nieuws gaan zien.</p>
+      <figure class="portrait"><img src="../assets/wietske.webp" width="900" height="1035" alt="Wietske, lachend, in een linnen jasje en met een witte haarband."></figure>
     </section>
 
     <section class="sec" aria-labelledby="l-t">
