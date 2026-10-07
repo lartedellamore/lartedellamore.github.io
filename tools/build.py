@@ -73,9 +73,9 @@ HOME = f"""    <section class="crest" aria-labelledby="h-t">
     <section class="sec" aria-labelledby="m-t">
       <span class="rule" aria-hidden="true"></span>
       <p class="eyebrow">Mission</p>
-      <h2 class="h2" id="m-t">To bring the truth of love and grace to people everywhere.</h2>
+      <h2 class="h2" id="m-t">Being perfected in the art of loving Love.</h2>
       <div class="prose">
-        <p>To honour and protect the dignity of every human being, and to serve the highest good in humility and unity.</p>
+        <p>To bring the truth of love and grace to people everywhere, to honour and protect the dignity of every human being, and to serve the highest good in humility and unity.</p>
         <p>Through coaching, photography and apps, we help people see their gifts and their life as one whole, and build the virtues and habits of a life ordered to the good of all. That is where happiness begins.</p>
       </div>
     </section>
@@ -233,6 +233,7 @@ ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
       <h2 class="h2" id="v-t">Mission and vision</h2>
       <div class="panel">
         <p class="eyebrow">Mission</p>
+        <p class="lede"><i>Being perfected in the art of loving Love.</i></p>
         <p class="lede">To bring the truth of love and grace to people everywhere, to honour and protect the dignity of every human being, and to serve the highest good in humility and unity.</p>
         <p class="eyebrow">Vision</p>
         <p class="lede">Through coaching, photography and apps, we help people see their gifts and their life as one whole, and build the virtues and habits of a life ordered to the good of all, which is where happiness begins.</p>
