@@ -48,6 +48,9 @@ p { margin: 0; text-wrap: pretty; }
 .top nav a { font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink2); text-decoration: none; padding-block: 8px; border-bottom: 1px solid transparent; }
 .top nav a:hover, .top nav a[aria-current="page"] { color: var(--gold-ink); border-bottom-color: var(--gold); }
 
+.top nav a.lang { color: var(--gold-ink); border: 1px solid var(--gold-pale); padding: 6px 12px; letter-spacing: 0.14em; }
+.top nav a.lang:hover { background: var(--leaf); }
+
 /* the page: a vertical rail and one column */
 .page { display: grid; grid-template-columns: 4.5rem minmax(0, var(--col)); column-gap: clamp(24px, 9vw, 150px); padding-block: clamp(44px, 8vw, 96px) 72px; }
 .rail { writing-mode: vertical-rl; font-size: 11px; letter-spacing: 0.42em; text-transform: uppercase; color: var(--dim); border-right: 1px solid var(--gold-pale); padding-right: 22px; justify-self: start; height: max-content; min-height: 15rem; white-space: nowrap; }
@@ -94,6 +97,7 @@ a.t:hover { color: var(--gold-ink); }
 .terms { margin: 0; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 10px 26px; border-top: 1px solid var(--line); padding-top: 18px; }
 .terms dt { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--dim); padding-top: 5px; }
 .terms dd { margin: 0; color: var(--ink2); }
+.terms dd b { font-family: var(--serif); font-weight: 500; font-size: 1.25em; color: var(--ink); }
 @media (max-width: 520px) { .terms { grid-template-columns: minmax(0, 1fr); gap: 2px; } .terms dd { margin-bottom: 12px; } }
 
 .steps { margin: 0; padding: 0; list-style: none; counter-reset: s; display: flex; flex-direction: column; gap: 18px; }
@@ -101,6 +105,8 @@ a.t:hover { color: var(--gold-ink); }
 .steps li::before { content: counter(s, upper-roman); font-family: var(--serif); font-style: italic; font-size: 19px; color: var(--gold-ink); }
 .steps b { display: block; font-family: var(--serif); font-weight: 500; font-size: 21px; line-height: 1.3; color: var(--ink); }
 .steps span { color: var(--ink2); }
+.steps b, .steps span { grid-column: 2; }
+.steps li::before { grid-column: 1; grid-row: 1; }
 
 .btn { display: inline-flex; align-items: center; min-height: 48px; padding: 12px 26px; border: 1px solid var(--gold); color: var(--ink); background: transparent; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; transition: background-color 0.2s, color 0.2s; }
 .btn:hover { background: var(--leaf); color: var(--ink); }
@@ -115,6 +121,7 @@ a.t:hover { color: var(--gold-ink); }
 .mount img { width: 100%; height: 100%; object-fit: cover; }
 .mount span { font-family: var(--serif); font-style: italic; font-size: 17px; color: var(--dim); text-align: center; }
 
+.panel .btn { background: var(--paper); }
 .panel { background: var(--linen); padding: clamp(22px, 4vw, 36px); display: flex; flex-direction: column; gap: 14px; }
 
 /* ── foot ── */
