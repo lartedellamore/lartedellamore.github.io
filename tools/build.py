@@ -101,7 +101,7 @@ HOME = f"""    <section class="crest" aria-labelledby="h-t">
       </div>
       <p class="eyebrow">Vision</p>
       <p class="lede">A world in which every person is received as bearing an inviolable dignity, knows their gifts, and has the habits and the freedom to spend their life for the good of others. I hold that this is the foundation of lasting joy, and of peace.</p>
-      <p class="small">* God. &nbsp;&middot;&nbsp; <a href="about.html#v-t">Read our seven values</a></p>
+      <p class="small">* God. &nbsp;&middot;&nbsp; <a href="about.html#v-t">Read my seven values</a></p>
     </section>
 
     <section class="sec" aria-labelledby="i-t">
@@ -129,12 +129,12 @@ COACHING = f"""    <section class="sec" aria-labelledby="h-t">
 
     <section class="sec" aria-labelledby="w-t">
       <span class="rule" aria-hidden="true"></span>
-      <h2 class="h2" id="w-t">How we work</h2>
+      <h2 class="h2" id="w-t">How I work</h2>
       <ol class="steps">
         <li><b>A first conversation</b><span>You tell me where you are and what you hope for. I tell you plainly whether I can help, and if I cannot, who might.</span></li>
-        <li><b>The whole picture</b><span>We look at your life as it actually is: sleep, food, movement, work, the people you love, rest, and prayer if that is part of your life. No judgement. I have seen my own.</span></li>
-        <li><b>One field at a time</b><span>We choose the one change that carries the others, and make it small enough to survive your worst week. I will not hand you a forty-step morning routine. Nobody has that kind of morning.</span></li>
-        <li><b>Habits that hold</b><span>We meet, adjust what did not work, and build until the habit no longer needs me. Being made unnecessary is the goal.</span></li>
+        <li><b>The whole picture</b><span>I look with you at your life as it actually is: sleep, food, movement, work, the people you love, rest, and prayer if that is part of your life. No judgement. I have seen my own.</span></li>
+        <li><b>One field at a time</b><span>I help you choose the one change that carries the others, and make it small enough to survive your worst week. I will not hand you a forty-step morning routine. Nobody has that kind of morning.</span></li>
+        <li><b>Habits that hold</b><span>I meet you regularly, adjust what did not work, and build with you until the habit no longer needs me. Being made unnecessary is the goal.</span></li>
       </ol>
     </section>
 
@@ -142,11 +142,11 @@ COACHING = f"""    <section class="sec" aria-labelledby="h-t">
       <span class="rule" aria-hidden="true"></span>
       <h2 class="h2" id="f-t">Fees</h2>
       <dl class="terms">
-        <dt>First conversation</dt><dd>20 minutes, free. We find out whether we suit each other.</dd>
+        <dt>First conversation</dt><dd>20 minutes, free. You and I find out whether this suits.</dd>
         <dt>Single session</dt><dd><b>&euro;95</b> &middot; 60 minutes, online or in Amsterdam.</dd>
         <dt>A season together</dt><dd><b>&euro;540</b> &middot; three months, six sessions, with short messages in between. This is where real change usually happens.</dd>
       </dl>
-      <p class="small">If the fee is the only thing standing between you and help, write to me anyway. We will find a way.</p>
+      <p class="small">If the fee is the only thing standing between you and help, write to me anyway. I will find a way with you.</p>
     </section>
 
     <section class="sec" aria-labelledby="p-t">
@@ -190,7 +190,7 @@ PHOTO = f"""    <section class="sec" aria-labelledby="h-t">
         <dt>Portraits</dt><dd><b>&euro;195</b> &middot; A personal portrait that looks like you on a good day, which is the truth.</dd>
         <dt>Business portraits</dt><dd><b>&euro;245</b> &middot; Authentic, professional headshots for your work.</dd>
       </dl>
-      <p class="small">Prices are in euros. Travel within Amsterdam is included; further afield, we agree it beforehand.</p>
+      <p class="small">Prices are in euros. Travel within Amsterdam is included; further afield, I agree it with you beforehand.</p>
     </section>
 
 {contact("Tell me about your day.")}"""
@@ -308,6 +308,8 @@ ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
         <dt>Photography</dt><dd>Weddings, families, portraits, and artists from around the world.</dd>
         <dt>Mountains</dt><dd>Ski instructor.</dd>
         <dt>Languages</dt><dd>English and Dutch.</dd>
+        <dt>Volunteering</dt><dd>Effeta Amsterdam, Our Lady&rsquo;s Church, Look Up Amsterdam, and Family of Pure Grace.</dd>
+        <dt>Built</dt><dd>Payag Experience, Siargao.</dd>
       </dl>
     </section>
 
@@ -350,7 +352,7 @@ ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
         <dt>Charity</dt><dd>Love that acts for the good of another is the measure of everything I make. Charity is the crown of life.</dd>
         <dt>Truth</dt><dd>I begin with honest self-examination and I tell people the truth with gentleness.</dd>
         <dt>Integral development</dt><dd>I serve the whole person: body, mind, heart, home, work and spirit.</dd>
-        <dt>Solidarity with the poor</dt><dd>Our work is not complete unless it reaches those who have least.</dd>
+        <dt>Solidarity with the poor</dt><dd>My work is not complete unless it reaches those who have least.</dd>
         <dt>Humility</dt><dd>I am being perfected, not perfect. I serve one person at a time and begin again as often as needed.</dd>
         <dt>Beauty</dt><dd>What I make should be worthy of the people it serves, because beauty awakens the desire for the good.</dd>
       </dl>
@@ -379,7 +381,7 @@ NL_HOME = f"""    <section class="crest" aria-labelledby="h-t">
       </div>
       <p class="eyebrow">Visie</p>
       <p class="lede">Een wereld waarin ieder mens wordt ontvangen als drager van een onschendbare waardigheid, zijn gaven kent, en de gewoonten en de vrijheid heeft om zijn leven te besteden aan het welzijn van anderen. Ik geloof dat dit het fundament is van blijvende vreugde, en van vrede.</p>
-      <p class="small">* God. &nbsp;&middot;&nbsp; <a href="about.html#v-t">Lees onze zeven waarden</a></p>
+      <p class="small">* God. &nbsp;&middot;&nbsp; <a href="about.html#v-t">Lees mijn zeven waarden</a></p>
     </section>
 
     <section class="sec" aria-labelledby="i-t">
@@ -407,12 +409,12 @@ NL_COACHING = f"""    <section class="sec" aria-labelledby="h-t">
 
     <section class="sec" aria-labelledby="w-t">
       <span class="rule" aria-hidden="true"></span>
-      <h2 class="h2" id="w-t">Hoe we werken</h2>
+      <h2 class="h2" id="w-t">Hoe ik werk</h2>
       <ol class="steps">
         <li><b>Een eerste gesprek</b><span>Jij vertelt waar je staat en waar je op hoopt. Ik zeg eerlijk of ik kan helpen, en zo niet, wie misschien wel.</span></li>
-        <li><b>Het hele plaatje</b><span>We kijken naar je leven zoals het werkelijk is: slaap, eten, beweging, werk, de mensen van wie je houdt, rust, en gebed als dat bij je leven hoort. Zonder oordeel. Ik heb het mijne ook gezien.</span></li>
-        <li><b>E&eacute;n veld tegelijk</b><span>We kiezen de ene verandering die de andere meetrekt, en maken haar klein genoeg om je slechtste week te overleven. Je krijgt van mij geen ochtendroutine van veertig stappen. Zo&rsquo;n ochtend heeft niemand.</span></li>
-        <li><b>Gewoonten die blijven</b><span>We spreken elkaar, stellen bij wat niet werkte, en bouwen door tot de gewoonte mij niet meer nodig heeft. Overbodig worden is het doel.</span></li>
+        <li><b>Het hele plaatje</b><span>Ik kijk met je mee naar je leven zoals het werkelijk is: slaap, eten, beweging, werk, de mensen van wie je houdt, rust, en gebed als dat bij je leven hoort. Zonder oordeel. Ik heb het mijne ook gezien.</span></li>
+        <li><b>E&eacute;n veld tegelijk</b><span>Ik help je de ene verandering te kiezen die de andere meetrekt, en maak haar klein genoeg om je slechtste week te overleven. Je krijgt van mij geen ochtendroutine van veertig stappen. Zo&rsquo;n ochtend heeft niemand.</span></li>
+        <li><b>Gewoonten die blijven</b><span>Ik spreek je regelmatig, stel bij wat niet werkte, en bouw met je door tot de gewoonte mij niet meer nodig heeft. Overbodig worden is het doel.</span></li>
       </ol>
     </section>
 
@@ -420,11 +422,11 @@ NL_COACHING = f"""    <section class="sec" aria-labelledby="h-t">
       <span class="rule" aria-hidden="true"></span>
       <h2 class="h2" id="f-t">Tarieven</h2>
       <dl class="terms">
-        <dt>Eerste gesprek</dt><dd>20 minuten, gratis. We ontdekken of we bij elkaar passen.</dd>
+        <dt>Eerste gesprek</dt><dd>20 minuten, gratis. Jij en ik ontdekken of het past.</dd>
         <dt>Losse sessie</dt><dd><b>&euro;95</b> &middot; 60 minuten, online of in Amsterdam.</dd>
         <dt>Een seizoen samen</dt><dd><b>&euro;540</b> &middot; drie maanden, zes sessies, met korte berichten tussendoor. Hier gebeurt de echte verandering meestal.</dd>
       </dl>
-      <p class="small">Is het tarief het enige wat tussen jou en hulp in staat? Schrijf me toch. We vinden een weg.</p>
+      <p class="small">Is het tarief het enige wat tussen jou en hulp in staat? Schrijf me toch. Ik zoek met je naar een weg.</p>
     </section>
 
     <section class="sec" aria-labelledby="p-t">
@@ -468,7 +470,7 @@ NL_PHOTO = f"""    <section class="sec" aria-labelledby="h-t">
         <dt>Portretten</dt><dd><b>&euro;195</b> &middot; Een persoonlijk portret waarop je eruitziet zoals op een goede dag, en dat is de waarheid.</dd>
         <dt>Zakelijke portretten</dt><dd><b>&euro;245</b> &middot; Authentieke, professionele portretten voor je werk.</dd>
       </dl>
-      <p class="small">Prijzen in euro&rsquo;s. Reizen binnen Amsterdam is inbegrepen; verder weg spreken we vooraf af.</p>
+      <p class="small">Prijzen in euro&rsquo;s. Reizen binnen Amsterdam is inbegrepen; verder weg spreek ik dat vooraf met je af.</p>
     </section>
 
 {contact("Vertel me over jullie dag.", "nl")}"""
@@ -586,6 +588,8 @@ NL_ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
         <dt>Fotografie</dt><dd>Bruiloften, gezinnen, portretten, en kunstenaars uit de hele wereld.</dd>
         <dt>Bergen</dt><dd>Skilerares.</dd>
         <dt>Talen</dt><dd>Nederlands en Engels.</dd>
+        <dt>Vrijwilligerswerk</dt><dd>Effeta Amsterdam, de Onze Lieve Vrouwekerk, Look Up Amsterdam en Family of Pure Grace.</dd>
+        <dt>Gebouwd</dt><dd>Payag Experience, Siargao.</dd>
       </dl>
     </section>
 
@@ -628,7 +632,7 @@ NL_ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
         <dt>Liefde</dt><dd>Liefde die handelt voor het goede van de ander is de maat van alles wat ik maak. De liefde is de kroon van het leven.</dd>
         <dt>Waarheid</dt><dd>Ik begin met eerlijk zelfonderzoek en zeg mensen de waarheid met zachtheid.</dd>
         <dt>Integrale ontwikkeling</dt><dd>Ik dien de hele mens: lichaam, geest, hart, huis, werk en ziel.</dd>
-        <dt>Solidariteit met de armen</dt><dd>Ons werk is niet af zolang het de mensen die het minst hebben niet bereikt.</dd>
+        <dt>Solidariteit met de armen</dt><dd>Mijn werk is niet af zolang het de mensen die het minst hebben niet bereikt.</dd>
         <dt>Nederigheid</dt><dd>Ik word volmaakt, ik ben het niet. Ik dien &eacute;&eacute;n mens tegelijk en begin opnieuw zo vaak als nodig is.</dd>
         <dt>Schoonheid</dt><dd>Wat ik maak moet de mensen die het dient waardig zijn, want schoonheid wekt het verlangen naar het goede.</dd>
       </dl>
