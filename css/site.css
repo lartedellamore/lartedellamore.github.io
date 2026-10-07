@@ -82,6 +82,10 @@ p { margin: 0; text-wrap: pretty; }
 .crest img { width: min(100%, 25rem); margin-left: -4%; }
 .motto { font-family: var(--serif); font-style: italic; font-size: 21px; color: var(--gold-ink); }
 
+/* ── portrait ── */
+.portrait { margin: 8px 0 0; max-width: 24rem; padding: 12px; background: var(--linen); border: 1px solid var(--line); }
+.portrait img { width: 100%; height: auto; }
+
 /* ── the house list: branches as an index, not cards ── */
 .index { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 .index li { display: grid; grid-template-columns: 2.4rem minmax(0, 1fr) auto; gap: 4px 16px; align-items: baseline; padding-block: 18px; border-bottom: 1px solid var(--line); }
