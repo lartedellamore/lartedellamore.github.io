@@ -94,12 +94,14 @@ HOME = f"""    <section class="crest" aria-labelledby="h-t">
     <section class="sec" aria-labelledby="m-t">
       <span class="rule" aria-hidden="true"></span>
       <p class="eyebrow">Mission</p>
-      <h2 class="h2" id="m-t">Being perfected in the art of loving Love.</h2>
+      <h2 class="h2" id="m-t">To order the whole of life to love.</h2>
+      <p class="lede">L&rsquo;arte dell&rsquo;amore accompanies people in the examination of conscience and the formation of virtue, so that each person may order their whole life to love: of Love*, of neighbour, and of the common good.</p>
       <div class="prose">
-        <p>L&rsquo;arte dell&rsquo;amore accompanies people in the examination of conscience and the formation of virtue, so that each person may order their whole life to love: of Love*, of neighbour, and of the common good.</p>
-        <p>This house serves one thing: the dignity of every human being, given and never earned. Through coaching, photography and a few carefully made tools, we help people recognise their gifts, order their days, and turn outward toward others. That is where happiness begins, and it begins smaller than most people expect.</p>
-        <p class="small">* God.</p>
+        <p>We do this through personal coaching, photography that honours human relationships, digital tools for daily life, and works of art, and we share what we earn with the children of the Family of Pure Grace orphanage in Uganda.</p>
       </div>
+      <p class="eyebrow">Vision</p>
+      <p class="lede">A world in which every person is received as bearing an inviolable dignity, knows their gifts, and has the habits and the freedom to spend their life for the good of others. We hold that this is the foundation of lasting joy, and of peace.</p>
+      <p class="small">* God. &nbsp;&middot;&nbsp; <a href="about.html#v-t">Read our seven values</a></p>
     </section>
 
     <section class="sec" aria-labelledby="i-t">
@@ -370,12 +372,14 @@ NL_HOME = f"""    <section class="crest" aria-labelledby="h-t">
     <section class="sec" aria-labelledby="m-t">
       <span class="rule" aria-hidden="true"></span>
       <p class="eyebrow">Missie</p>
-      <h2 class="h2" id="m-t">Volmaakt worden in de kunst de Liefde lief te hebben.</h2>
+      <h2 class="h2" id="m-t">Het hele leven richten op de liefde.</h2>
+      <p class="lede">L&rsquo;arte dell&rsquo;amore begeleidt mensen in het gewetensonderzoek en de vorming van deugd, zodat ieder mens zijn hele leven kan richten op de liefde: tot de Liefde*, tot de naaste en tot het algemeen welzijn.</p>
       <div class="prose">
-        <p>L&rsquo;arte dell&rsquo;amore begeleidt mensen in het gewetensonderzoek en de vorming van deugd, zodat ieder mens zijn hele leven kan richten op de liefde: tot de Liefde*, tot de naaste en tot het algemeen welzijn.</p>
-        <p>Dit huis dient &eacute;&eacute;n ding: de waardigheid van ieder mens, gegeven en nooit verdiend. Met coaching, fotografie en een paar zorgvuldig gemaakte hulpmiddelen helpen we mensen hun gaven te herkennen, hun dagen te ordenen en zich naar anderen te keren. Daar begint geluk, en het begint kleiner dan de meeste mensen verwachten.</p>
-        <p class="small">* God.</p>
+        <p>Dat doen we met persoonlijke coaching, fotografie die menselijke relaties eert, digitale hulpmiddelen voor het dagelijks leven en kunstwerken, en we delen wat we verdienen met de kinderen van weeshuis Family of Pure Grace in Oeganda.</p>
       </div>
+      <p class="eyebrow">Visie</p>
+      <p class="lede">Een wereld waarin ieder mens wordt ontvangen als drager van een onschendbare waardigheid, zijn gaven kent, en de gewoonten en de vrijheid heeft om zijn leven te besteden aan het welzijn van anderen. Wij geloven dat dit het fundament is van blijvende vreugde, en van vrede.</p>
+      <p class="small">* God. &nbsp;&middot;&nbsp; <a href="about.html#v-t">Lees onze zeven waarden</a></p>
     </section>
 
     <section class="sec" aria-labelledby="i-t">
