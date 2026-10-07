@@ -19,7 +19,7 @@ T = {
                other="Nederlands", other_code="nl", pages="Pages", footer="Footer"),
     "nl": dict(nav=["Het huis", "Coaching", "Fotografie", "Atelier", "De Brief", "Over mij"],
                skip="Ga naar de tekst", foot="De liefde is de kroon van het leven.", contact="Contact",
-               write="Schrijf mij", answer="Ik antwoord binnen twee werkdagen, in het Nederlands of Engels. Iets trager op feestdagen en bij verse sneeuw.",
+               write="Schrijf me", answer="Ik antwoord binnen twee werkdagen, in het Nederlands of Engels. Iets trager op feestdagen en bij poedersneeuw.",
                other="English", other_code="en", pages="Pagina's", footer="Voettekst"),
 }
 
@@ -307,7 +307,7 @@ ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
         <dt>Photography</dt><dd>Weddings, families, portraits, and artists from around the world.</dd>
         <dt>Mountains</dt><dd>Ski instructor.</dd>
         <dt>Languages</dt><dd>English and Dutch.</dd>
-        <dt>Volunteering</dt><dd>Effeta Amsterdam, Our Lady&rsquo;s Church, Look Up Amsterdam, and Family of Pure Grace.</dd>
+        <dt>Volunteering</dt><dd>Effet&aacute; Amsterdam, Our Lady&rsquo;s Church, Look Up Amsterdam, and Family of Pure Grace.</dd>
         <dt>Built</dt><dd>Payag Experience, Siargao.</dd>
       </dl>
     </section>
@@ -364,21 +364,21 @@ ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
 ABONNEER = f"mailto:{EMAIL}?subject=Aanmelden%20voor%20De%20Brief"
 
 NL_HOME = f"""    <section class="crest" aria-labelledby="h-t">
-      <p class="eyebrow">Amsterdam &middot; coaching, fotografie, en dingen gemaakt met de hand en met code</p>
+      <p class="eyebrow">Amsterdam &middot; coaching, fotografie, en dingen die met de hand en met code zijn gemaakt</p>
       <h1 class="display" id="h-t">De liefde is de <em>kroon</em> van het leven.</h1>
-      <p class="lede">L&rsquo;arte dell&rsquo;amore is een klein huis met een grote hoop: dat je je leven als &eacute;&eacute;n geheel mag zien, en leert het aan liefde te besteden. Ik leer dat zelf ook nog, en daarom staat de deur open.</p>
+      <p class="lede">L&rsquo;arte dell&rsquo;amore is een klein huis met een grote hoop: dat je je leven als &eacute;&eacute;n geheel mag zien, en het leert besteden aan de liefde. Ik leer dat zelf ook nog, en daarom staat de deur open.</p>
     </section>
 
     <section class="sec" aria-labelledby="m-t">
       <span class="rule" aria-hidden="true"></span>
       <p class="eyebrow">Missie</p>
       <h2 class="h2" id="m-t">Het hele leven richten op de liefde.</h2>
-      <p class="lede">L&rsquo;arte dell&rsquo;amore begeleidt mensen in het gewetensonderzoek en de vorming van deugd, zodat ieder mens zijn hele leven kan richten op de liefde: de Liefde*, de naaste en het algemeen welzijn.</p>
+      <p class="lede">L&rsquo;arte dell&rsquo;amore begeleidt mensen bij het gewetensonderzoek en de vorming van deugden, zodat ieder mens zijn hele leven kan richten op de liefde: de Liefde*, de naaste en het algemeen welzijn.</p>
       <div class="prose">
-        <p>Dat doe ik met persoonlijke coaching, fotografie die menselijke relaties eert, digitale hulpmiddelen voor het dagelijks leven en kunstwerken.</p>
+        <p>Dat doe ik met persoonlijke coaching, fotografie die de band tussen mensen eert, digitale hulpmiddelen voor het dagelijks leven en kunstwerken.</p>
       </div>
       <p class="eyebrow">Visie</p>
-      <p class="lede">Een wereld waarin ieder mens wordt ontvangen als drager van een onschendbare waardigheid, zijn gaven kent, en de gewoonten en de vrijheid heeft om zijn leven te besteden aan het welzijn van anderen. Ik geloof dat dit het fundament is van blijvende vreugde, en van vrede.</p>
+      <p class="lede">Een wereld waarin ieder mens wordt ontvangen als drager van een onschendbare waardigheid, zijn gaven kent, en de gewoonten en de vrijheid heeft om zijn leven in te zetten voor het goede van anderen. Ik geloof dat dit het fundament is van blijvende vreugde, en van vrede.</p>
       <p class="small">* God. &nbsp;&middot;&nbsp; <a href="about.html#v-t">Lees mijn zeven waarden</a></p>
     </section>
 
@@ -387,12 +387,12 @@ NL_HOME = f"""    <section class="crest" aria-labelledby="h-t">
       <p class="eyebrow">Het huis</p>
       <h2 class="h2" id="i-t">Zeven kamers, &eacute;&eacute;n deur.</h2>
       <ol class="index">
-        <li><span class="n">i</span><a class="t" href="{APP}" rel="noopener">Illuminated Life</a><span class="state open">Open</span><span class="d">Een leefregel over twaalf velden van rentmeesterschap. Geen reeksen, geen punten; de heiligen redden het ook zonder ranglijst. (De app is in het Engels.)</span></li>
+        <li><span class="n">i</span><a class="t" href="{APP}" rel="noopener">Illuminated Life</a><span class="state open">Open</span><span class="d">Een leefregel over twaalf velden van rentmeesterschap. Geen streaks, geen punten; de heiligen redden het ook zonder ranglijst. (De app is in het Engels.)</span></li>
         <li><span class="n">ii</span><a class="t" href="coaching.html">Gezondheids- en leefstijlcoaching</a><span class="state open">Open</span><span class="d">E&eacute;n op &eacute;&eacute;n, online of in Amsterdam. Vanaf &euro;95 per sessie.</span></li>
-        <li><span class="n">iii</span><a class="t" href="photography.html">Fotografie</a><span class="state open">Open</span><span class="d">Bruiloften, verlovingen, gezinnen en portretten. Vanaf &euro;195.</span></li>
+        <li><span class="n">iii</span><a class="t" href="photography.html">Fotografie</a><span class="state open">Open</span><span class="d">Bruiloften, loveshoots, gezinnen en portretten. Vanaf &euro;195.</span></li>
         <li><span class="n">iv</span><a class="t" href="letter.html">De Brief</a><span class="state open">Gratis</span><span class="d">Eens per week: iets voor het lichaam, iets voor de geest, een verhaal voor de ziel.</span></li>
         <li><span class="n">v</span><a class="t" href="atelier.html#digital">Digitale producten</a><span class="state">In de maak</span><span class="d">Catholicity OS voor Notion, en Catholic Healing Arts.</span></li>
-        <li><span class="n">vi</span><a class="t" href="atelier.html#prints">Kunstprints en geschenken</a><span class="state">In de maak</span><span class="d">Gouden fijne lijn op natuurlijk papier; ethisch en duurzaam geproduceerde kleding.</span></li>
+        <li><span class="n">vi</span><a class="t" href="atelier.html#prints">Kunstprints en geschenken</a><span class="state">In de maak</span><span class="d">Een fijne gouden lijn op natuurlijk papier; ethisch en duurzaam geproduceerde kleding.</span></li>
         <li><span class="n">vii</span><a class="t" href="atelier.html#apps">Apps</a><span class="state">In de maak</span><span class="d">Global Holy Rosary, Beatitude, Eternal Camino.</span></li>
       </ol>
     </section>
@@ -409,7 +409,7 @@ NL_COACHING = f"""    <section class="sec" aria-labelledby="h-t">
       <span class="rule" aria-hidden="true"></span>
       <h2 class="h2" id="w-t">Hoe ik werk</h2>
       <ol class="steps">
-        <li><b>Een eerste gesprek</b><span>Jij vertelt waar je staat en waar je op hoopt. Ik zeg eerlijk of ik kan helpen, en zo niet, wie misschien wel.</span></li>
+        <li><b>Een kennismaking</b><span>Jij vertelt waar je staat en waar je op hoopt. Ik zeg eerlijk of ik kan helpen, en zo niet, wie misschien wel.</span></li>
         <li><b>Het hele plaatje</b><span>Ik kijk met je mee naar je leven zoals het werkelijk is: slaap, eten, beweging, werk, de mensen van wie je houdt, rust, en gebed als dat bij je leven hoort. Zonder oordeel. Ik heb het mijne ook gezien.</span></li>
         <li><b>E&eacute;n veld tegelijk</b><span>Ik help je de ene verandering te kiezen die de andere meetrekt, en maak haar klein genoeg om je slechtste week te overleven. Je krijgt van mij geen ochtendroutine van veertig stappen. Zo&rsquo;n ochtend heeft niemand.</span></li>
         <li><b>Gewoonten die blijven</b><span>Ik spreek je regelmatig, stel bij wat niet werkte, en bouw met je door tot de gewoonte mij niet meer nodig heeft. Overbodig worden is het doel.</span></li>
@@ -420,11 +420,11 @@ NL_COACHING = f"""    <section class="sec" aria-labelledby="h-t">
       <span class="rule" aria-hidden="true"></span>
       <h2 class="h2" id="f-t">Tarieven</h2>
       <dl class="terms">
-        <dt>Eerste gesprek</dt><dd>20 minuten, gratis. Jij en ik ontdekken of het past.</dd>
+        <dt>Kennismaking</dt><dd>20 minuten, gratis. Samen ontdekken jij en ik of het klikt.</dd>
         <dt>Losse sessie</dt><dd><b>&euro;95</b> &middot; 60 minuten, online of in Amsterdam.</dd>
-        <dt>Een seizoen samen</dt><dd><b>&euro;540</b> &middot; drie maanden, zes sessies, met korte berichten tussendoor. Hier gebeurt de echte verandering meestal.</dd>
+        <dt>Een seizoen samen</dt><dd><b>&euro;540</b> &middot; een traject van drie maanden, zes sessies, met korte berichten tussendoor. Hier vindt de echte verandering meestal plaats.</dd>
       </dl>
-      <p class="small">Is het tarief het enige wat tussen jou en hulp in staat? Schrijf me toch. Ik zoek met je naar een weg.</p>
+      <p class="small">Is het tarief het enige wat tussen jou en hulp in staat? Schrijf me toch. Dan zoek ik met je naar een oplossing.</p>
     </section>
 
     <section class="sec" aria-labelledby="p-t">
@@ -435,14 +435,14 @@ NL_COACHING = f"""    <section class="sec" aria-labelledby="h-t">
         <dt>Talen</dt><dd>Nederlands en Engels.</dd>
         <dt>Coach</dt><dd>Wietske, gecertificeerd holistisch gezondheidscoach (Institute for Integrative Nutrition), bezig met een bachelor Psychologie.</dd>
       </dl>
-      <p class="small">Coaching ondersteunt een gezonde leefstijl. Het stelt geen diagnoses, behandelt geen ziekten en vervangt je arts of therapeut niet.</p>
+      <p class="small">Coaching ondersteunt een gezonde leefstijl. Ik stel geen diagnoses, behandel geen ziekten en vervang je arts of therapeut niet.</p>
     </section>
 
 {contact("Vertel me waar je staat.", "nl")}"""
 
 NL_PHOTO = f"""    <section class="sec" aria-labelledby="h-t">
       <p class="eyebrow">Fotografie</p>
-      <h1 class="display" id="h-t">Schoonheid vastleggen door de <em>kunst</em> van het fotograferen.</h1>
+      <h1 class="display" id="h-t">Schoonheid vastleggen met de <em>kunst</em> van de fotografie.</h1>
       <p class="lede">Een foto is een kleine daad van eerbied: ze zegt dat deze mens, deze dag, het bewaren waard was. Ik werk zonder haast, in natuurlijk licht, en ik heb nog nooit iemand gevraagd om &lsquo;cheese&rsquo; te zeggen.</p>
     </section>
 
@@ -451,7 +451,7 @@ NL_PHOTO = f"""    <section class="sec" aria-labelledby="h-t">
       <h2 class="h2" id="g-t">Portfolio</h2>
       <div class="mounts">
         <div class="mount wide"><span>Bruiloft</span></div>
-        <div class="mount"><span>Verloving</span></div>
+        <div class="mount"><span>Loveshoot</span></div>
         <div class="mount"><span>Gezin</span></div>
         <div class="mount"><span>Portret</span></div>
         <div class="mount"><span>Zakelijk portret</span></div>
@@ -462,21 +462,21 @@ NL_PHOTO = f"""    <section class="sec" aria-labelledby="h-t">
       <span class="rule" aria-hidden="true"></span>
       <h2 class="h2" id="s-t">Wat ik fotografeer, en wat het kost</h2>
       <dl class="terms">
-        <dt>Bruiloften</dt><dd><b>&euro;1.950</b> &middot; De hele dag, van de stilte vooraf tot de laatste dans. Je ontvangt de volledige bewerkte galerij.</dd>
-        <dt>Verlovingen</dt><dd><b>&euro;295</b> &middot; Een uur of twee op een plek die voor jullie telt. Ook een zachte generale repetitie voor de bruiloft.</dd>
+        <dt>Bruiloften</dt><dd><b>&euro;1.950</b> &middot; Een bruidsreportage van de hele dag, van de stilte vooraf tot de laatste dans. Jullie ontvangen de volledige bewerkte galerij.</dd>
+        <dt>Loveshoots</dt><dd><b>&euro;295</b> &middot; Een uur of twee op een plek die voor jullie iets betekent. Meteen een ontspannen generale repetitie voor de bruiloft.</dd>
         <dt>Gezinnen</dt><dd><b>&euro;325</b> &middot; Thuis of buiten, ook newborn en zwangerschap. Kinderen mogen precies zijn zoals ze zijn.</dd>
         <dt>Portretten</dt><dd><b>&euro;195</b> &middot; Een persoonlijk portret waarop je eruitziet zoals op een goede dag, en dat is de waarheid.</dd>
-        <dt>Zakelijke portretten</dt><dd><b>&euro;245</b> &middot; Authentieke, professionele portretten voor je werk.</dd>
+        <dt>Zakelijke portretten</dt><dd><b>&euro;245</b> &middot; Professionele portretten voor je werk, waarop je jezelf herkent.</dd>
       </dl>
-      <p class="small">Prijzen in euro&rsquo;s. Reizen binnen Amsterdam is inbegrepen; verder weg spreek ik dat vooraf met je af.</p>
+      <p class="small">Prijzen in euro&rsquo;s. Reiskosten binnen Amsterdam zijn inbegrepen; daarbuiten spreek ik ze vooraf met je af.</p>
     </section>
 
 {contact("Vertel me over jullie dag.", "nl")}"""
 
 NL_ATELIER = f"""    <section class="sec" aria-labelledby="h-t">
       <p class="eyebrow">Atelier</p>
-      <h1 class="display" id="h-t">Langzaam gemaakt, <em>om te houden</em>.</h1>
-      <p class="lede">Hulpmiddelen, prints en geschenken uit hetzelfde huis. E&eacute;n is vandaag open. De rest is in de maak, en dat zeg ik liever dan dat ik doe alsof.</p>
+      <h1 class="display" id="h-t">Met aandacht gemaakt, <em>om te bewaren</em>.</h1>
+      <p class="lede">Hulpmiddelen, prints en geschenken uit hetzelfde huis. E&eacute;n ervan is nu open. De rest is in de maak, en dat zeg ik liever dan dat ik doe alsof.</p>
     </section>
 
     <section class="sec" aria-labelledby="il-t">
@@ -495,7 +495,7 @@ NL_ATELIER = f"""    <section class="sec" aria-labelledby="h-t">
       <p class="eyebrow">In de maak</p>
       <h2 class="h2" id="d-t">Digitale producten</h2>
       <dl class="terms">
-        <dt>Catholicity OS</dt><dd>Een Notion-werkruimte voor het geheel van een katholiek leven, gebouwd op dezelfde drie ringen. De winst gaat naar het bouwfonds van Family of Pure Grace.</dd>
+        <dt>Catholicity OS</dt><dd>Een Notion-werkruimte voor een katholiek leven in zijn geheel, gebouwd op dezelfde drie ringen. De winst gaat naar het bouwfonds van Family of Pure Grace.</dd>
         <dt>Catholic Healing Arts</dt><dd>Meer volgt.</dd>
       </dl>
     </section>
@@ -505,7 +505,7 @@ NL_ATELIER = f"""    <section class="sec" aria-labelledby="h-t">
       <p class="eyebrow">In de maak</p>
       <h2 class="h2" id="a-t">Apps</h2>
       <dl class="terms">
-        <dt>Global Holy Rosary</dt><dd>Bid de Rozenkrans voor elk land in zijn eigen taal en zie de wereldkaart goud kleuren.</dd>
+        <dt>Global Holy Rosary</dt><dd>Bid de rozenkrans voor elk land in zijn eigen taal en zie de wereldkaart goud kleuren.</dd>
         <dt>Beatitude</dt><dd>Een katholieke sociale app die liefde beloont in plaats van populariteit. Een ongebruikelijk verdienmodel, dat geef ik toe.</dd>
         <dt>Eternal Camino</dt><dd>Een reisgezel met een pagina voor elk land.</dd>
       </dl>
@@ -515,7 +515,7 @@ NL_ATELIER = f"""    <section class="sec" aria-labelledby="h-t">
       <span class="rule" aria-hidden="true"></span>
       <p class="eyebrow">In de maak</p>
       <h2 class="h2" id="pr-t">Kunstprints</h2>
-      <p class="prose">Tekeningen in gouden fijne lijn op natuurlijk papier.</p>
+      <p class="prose">Tekeningen in een fijne gouden lijn op natuurlijk papier.</p>
     </section>
 
     <section class="sec" id="gifts" aria-labelledby="gf-t">
@@ -525,19 +525,19 @@ NL_ATELIER = f"""    <section class="sec" aria-labelledby="h-t">
       <p class="prose">Ethisch en duurzaam geproduceerde kleding.</p>
     </section>
 
-{contact("Vraag me een seintje als er iets opengaat.", "nl")}"""
+{contact("Vraag me om een seintje zodra er iets opengaat.", "nl")}"""
 
 NL_LETTER = f"""    <section class="sec" aria-labelledby="h-t">
       <p class="eyebrow">De Brief &middot; wekelijks &middot; gratis</p>
       <h1 class="display" id="h-t">E&eacute;n brief per week, voor <em>heel</em> de mens.</h1>
-      <p class="lede">Kort genoeg voor &eacute;&eacute;n kop koffie. Drie delen, elke week, voor lichaam, geest en ziel. De Brief is voorlopig in het Engels.</p>
+      <p class="lede">Kort genoeg voor bij &eacute;&eacute;n kop koffie. Drie delen, elke week, voor lichaam, geest en ziel. De Brief is voorlopig in het Engels.</p>
     </section>
 
     <section class="sec" aria-labelledby="w-t">
       <span class="rule" aria-hidden="true"></span>
-      <h2 class="h2" id="w-t">Wat er aankomt</h2>
+      <h2 class="h2" id="w-t">Wat je ontvangt</h2>
       <ol class="steps">
-        <li><b>Het lichaam</b><span>E&eacute;n praktijk uit de wereld van het biohacken, eerlijk bekeken: wat het bewijs ondersteunt, wat hype is, en wat je grootmoeder allang wist.</span></li>
+        <li><b>Het lichaam</b><span>E&eacute;n gewoonte uit de wereld van het biohacken, eerlijk bekeken: wat het bewijs laat zien, wat hype is, en wat je grootmoeder allang wist.</span></li>
         <li><b>De geest</b><span>Een korte overweging uit de katholieke theologie van gezondheid en bloei. Het lichaam als gave, rust als gehoorzaamheid, en waarom heiligheid en welzijn vrienden zijn.</span></li>
         <li><b>Het verhaal</b><span>E&eacute;n Bijbelverhaal gelezen met de blik van een psycholoog, uit de boeken die ik schrijf. De Schrift leest ons al heel lang.</span></li>
       </ol>
@@ -547,10 +547,10 @@ NL_LETTER = f"""    <section class="sec" aria-labelledby="h-t">
       <span class="rule" aria-hidden="true"></span>
       <h2 class="h2" id="s-t">Aanmelden</h2>
       <div class="panel">
-        <p class="lede">Stuur &eacute;&eacute;n e-mail met het woord <i>Aanmelden</i>, en je bent erbij.</p>
+        <p class="lede">Stuur &eacute;&eacute;n e-mail met het woord <i>Aanmelden</i>, en je staat op de lijst.</p>
         <p class="addr">{EMAIL}</p>
         <div class="row"><a class="btn" href="{ABONNEER}">Aanmelden per e-mail</a></div>
-        <p class="small">Ik bewaar je e-mailadres en verder niets, en gebruik het alleen voor deze brief. Stoppen? Antwoord <i>stop</i> op een willekeurige brief. Geen trucs, geen verkoop van lijsten.</p>
+        <p class="small">Ik bewaar je e-mailadres en verder niets, en gebruik het alleen voor deze brief. Stoppen? Antwoord <i>stop</i> op een willekeurige brief. Geen trucs, en ik verkoop geen adressen.</p>
       </div>
       <p class="small">De Brief deelt idee&euml;n voor gezond leven en is geen medisch advies. Overleg met je arts voordat je iets verandert aan behandeling, vasten of supplementen.</p>
     </section>
@@ -559,7 +559,7 @@ NL_LETTER = f"""    <section class="sec" aria-labelledby="h-t">
 
 NL_ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
       <p class="eyebrow">Over mij</p>
-      <h1 class="display" id="h-t">De kunst van de <em>liefde</em>, beoefend.</h1>
+      <h1 class="display" id="h-t">De kunst van de <em>liefde</em>, in de praktijk.</h1>
       <p class="lede">Ik ben Wietske: gezondheids- en leefstijlcoach, fotograaf, en levenslang leerling van het menselijk hart. Ik ben niet af, en dat ben ik als goed nieuws gaan zien.</p>
     </section>
 
@@ -569,7 +569,7 @@ NL_ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
       <h2 class="h2" id="l-t">Zesenvijftig landen, en nog steeds nieuwsgierig.</h2>
       <div class="prose">
         <p>Ik heb door meer dan 56 landen gereisd en kunstenaars uit de hele wereld gefotografeerd. Wat ik mee naar huis nam is eenvoudig. Mensen willen overal dezelfde paar dingen: gezien worden, ergens bij horen, en leven voor iets goeds.</p>
-        <p>Ik ben het gelukkigst buiten en in beweging. Ik ben skilerares, en ik houd van de sporten die je hele aandacht vragen: kitesurfen, surfen en trailrunnen. De zee en de berg zijn uitstekende leermeesters in nederigheid; ze geven geen punten voor inzet. Ze leerden mij wat ik nu doorgeef: het lichaam is een gave om in te wonen, en moed is een gewoonte.</p>
+        <p>Ik ben op mijn gelukkigst buiten en in beweging. Ik ben skilerares, en ik houd van de sporten die je hele aandacht vragen: kitesurfen, surfen en trailrunnen. De zee en de berg zijn uitstekende leermeesters in nederigheid; ze geven geen punten voor inzet. Ze leerden mij wat ik nu doorgeef: het lichaam is een gave om in te wonen, en moed is een gewoonte.</p>
       </div>
     </section>
 
@@ -578,15 +578,15 @@ NL_ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
       <p class="eyebrow">Werk en studie</p>
       <h2 class="h2" id="w-t">Dicht bij mensen, in hun eigen huis.</h2>
       <div class="prose">
-        <p>Door de jaren heen heb ik voor meer dan 35 gezinnen gewerkt, waarvan veel in de schijnwerpers staan. Binnen een huishouden leer je hoe een leven werkelijk loopt: zijn ritmes, zijn spanningen, en de stille dingen die het bijeenhouden. Je leert er ook discretie, en dat is liefde met de mond dicht.</p>
+        <p>Door de jaren heen heb ik voor meer dan 35 gezinnen gewerkt, veelal vooraanstaande. Binnen een huishouden leer je hoe een leven werkelijk loopt: zijn ritmes, zijn spanningen, en de stille dingen die het bijeenhouden. Je leert er ook discretie, en dat is liefde met de mond dicht.</p>
       </div>
       <dl class="terms">
         <dt>Coaching</dt><dd>Gecertificeerd holistisch gezondheidscoach (Institute for Integrative Nutrition).</dd>
-        <dt>Studie</dt><dd>Bachelor Psychologie, in opleiding.</dd>
+        <dt>Studie</dt><dd>Bachelor Psychologie, nog bezig.</dd>
         <dt>Fotografie</dt><dd>Bruiloften, gezinnen, portretten, en kunstenaars uit de hele wereld.</dd>
         <dt>Bergen</dt><dd>Skilerares.</dd>
         <dt>Talen</dt><dd>Nederlands en Engels.</dd>
-        <dt>Vrijwilligerswerk</dt><dd>Effeta Amsterdam, de Onze Lieve Vrouwekerk, Look Up Amsterdam en Family of Pure Grace.</dd>
+        <dt>Vrijwilligerswerk</dt><dd>Effet&aacute; Amsterdam, de Onze Lieve Vrouwekerk, Look Up Amsterdam en Family of Pure Grace.</dd>
         <dt>Gebouwd</dt><dd>Payag Experience, Siargao.</dd>
       </dl>
     </section>
@@ -598,8 +598,8 @@ NL_ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
       <div class="panel">
         <p class="lede">Een thuis voor weeskinderen in Bugiri, Oeganda.</p>
         <div class="prose">
-          <p>Family of Pure Grace geeft weeskinderen zorg, onderdak, eten en onderwijs. Ik help geld in te zamelen om een huis te bouwen voor de 28 kinderen, en de winst van de Catholicity OS-template gaat naar het bouwfonds.</p>
-          <p>Een leus over liefde hoort haar schrijver iets te kosten. Giften gaan rechtstreeks naar Family of Pure Grace, via hun eigen pagina.</p>
+          <p>Family of Pure Grace geeft weeskinderen zorg, onderdak, eten en onderwijs. Ik help geld inzamelen om een huis te bouwen voor de 28 kinderen, en de winst van de Catholicity OS-template gaat naar het bouwfonds.</p>
+          <p>Een motto over liefde hoort de schrijver ervan iets te kosten. Giften gaan rechtstreeks naar Family of Pure Grace, via hun eigen pagina.</p>
         </div>
         <div class="row"><a class="btn" href="{DONATE}" rel="noopener">Doneer aan Family of Pure Grace</a><a href="{FOPG}" rel="noopener">Ontmoet de kinderen</a></div>
       </div>
@@ -619,24 +619,24 @@ NL_ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
       <h2 class="h2" id="v-t">Missie, visie en waarden</h2>
       <div class="panel">
         <p class="eyebrow">Missie</p>
-        <p class="lede">L&rsquo;arte dell&rsquo;amore begeleidt mensen in het gewetensonderzoek en de vorming van deugd, zodat ieder mens zijn hele leven kan richten op de liefde: de Liefde*, de naaste en het algemeen welzijn.</p>
-        <p>Dat doe ik met persoonlijke coaching, fotografie die menselijke relaties eert, digitale hulpmiddelen voor het dagelijks leven en kunstwerken.</p>
+        <p class="lede">L&rsquo;arte dell&rsquo;amore begeleidt mensen bij het gewetensonderzoek en de vorming van deugden, zodat ieder mens zijn hele leven kan richten op de liefde: de Liefde*, de naaste en het algemeen welzijn.</p>
+        <p>Dat doe ik met persoonlijke coaching, fotografie die de band tussen mensen eert, digitale hulpmiddelen voor het dagelijks leven en kunstwerken.</p>
         <p class="eyebrow">Visie</p>
-        <p class="lede">Een wereld waarin ieder mens wordt ontvangen als drager van een onschendbare waardigheid, zijn gaven kent, en de gewoonten en de vrijheid heeft om zijn leven te besteden aan het welzijn van anderen. Ik geloof dat dit het fundament is van blijvende vreugde, en van vrede.</p>
+        <p class="lede">Een wereld waarin ieder mens wordt ontvangen als drager van een onschendbare waardigheid, zijn gaven kent, en de gewoonten en de vrijheid heeft om zijn leven in te zetten voor het goede van anderen. Ik geloof dat dit het fundament is van blijvende vreugde, en van vrede.</p>
         <p class="small">* God.</p>
       </div>
       <dl class="terms">
         <dt>Menselijke waardigheid</dt><dd>Ieder mens heeft een waarde die gegeven is, niet verdiend, en die geen omstandigheid kan wegnemen.</dd>
-        <dt>Liefde</dt><dd>Liefde die handelt voor het goede van de ander is de maat van alles wat ik maak. De liefde is de kroon van het leven.</dd>
-        <dt>Waarheid</dt><dd>Ik begin met eerlijk zelfonderzoek en zeg mensen de waarheid met zachtheid.</dd>
+        <dt>Liefde</dt><dd>Liefde die het goede voor de ander doet, is de maat van alles wat ik maak. De liefde is de kroon van het leven.</dd>
+        <dt>Waarheid</dt><dd>Ik begin met eerlijk zelfonderzoek en vertel mensen de waarheid, met zachtheid.</dd>
         <dt>Integrale ontwikkeling</dt><dd>Ik dien de hele mens: lichaam, geest, hart, huis, werk en ziel.</dd>
         <dt>Solidariteit met de armen</dt><dd>Mijn werk is niet af zolang het de mensen die het minst hebben niet bereikt.</dd>
-        <dt>Nederigheid</dt><dd>Ik word volmaakt, ik ben het niet. Ik dien &eacute;&eacute;n mens tegelijk en begin opnieuw zo vaak als nodig is.</dd>
-        <dt>Schoonheid</dt><dd>Wat ik maak moet de mensen die het dient waardig zijn, want schoonheid wekt het verlangen naar het goede.</dd>
+        <dt>Nederigheid</dt><dd>Ik ben in wording, niet volmaakt. Ik dien &eacute;&eacute;n mens tegelijk en begin opnieuw zo vaak als nodig is.</dd>
+        <dt>Schoonheid</dt><dd>Wat ik maak, moet de mensen voor wie het bedoeld is waardig zijn, want schoonheid wekt het verlangen naar het goede.</dd>
       </dl>
     </section>
 
-{contact("Schrijf mij.", "nl")}"""
+{contact("Schrijf me.", "nl")}"""
 
 PAGES = [
     ("index.html", "L'arte dell'amore", "Coaching, photography and tools for a life ordered to love. Amsterdam.", "L&rsquo;arte dell&rsquo;amore &nbsp;&middot;&nbsp; <b>Amsterdam</b>", HOME, "en"),
@@ -647,8 +647,8 @@ PAGES = [
     ("about.html", "About · L'arte dell'amore", "Wietske, holistic health coach and photographer in Amsterdam.", "About &nbsp;&middot;&nbsp; <b>Wietske</b>", ABOUT, "en"),
     ("index.html", "L'arte dell'amore", "Coaching, fotografie en hulpmiddelen voor een leven gericht op liefde. Amsterdam.", "L&rsquo;arte dell&rsquo;amore &nbsp;&middot;&nbsp; <b>Amsterdam</b>", NL_HOME, "nl"),
     ("coaching.html", "Coaching · L'arte dell'amore", "Holistische gezondheids- en leefstijlcoaching, één op één, online of in Amsterdam. Vanaf 95 euro per sessie.", "Coaching &nbsp;&middot;&nbsp; <b>&eacute;&eacute;n op &eacute;&eacute;n</b>", NL_COACHING, "nl"),
-    ("photography.html", "Fotografie · L'arte dell'amore", "Bruidsfotografie, verlovings-, gezins- en portretfotografie vanuit Amsterdam.", "Fotografie &nbsp;&middot;&nbsp; <b>natuurlijk licht</b>", NL_PHOTO, "nl"),
-    ("atelier.html", "Atelier · L'arte dell'amore", "Illuminated Life, digitale producten, apps, kunstprints en geschenken.", "Atelier &nbsp;&middot;&nbsp; <b>langzaam gemaakt</b>", NL_ATELIER, "nl"),
+    ("photography.html", "Fotografie · L'arte dell'amore", "Bruidsfotografie, loveshoots, gezins- en portretfotografie vanuit Amsterdam.", "Fotografie &nbsp;&middot;&nbsp; <b>natuurlijk licht</b>", NL_PHOTO, "nl"),
+    ("atelier.html", "Atelier · L'arte dell'amore", "Illuminated Life, digitale producten, apps, kunstprints en geschenken.", "Atelier &nbsp;&middot;&nbsp; <b>met aandacht gemaakt</b>", NL_ATELIER, "nl"),
     ("letter.html", "De Brief · L'arte dell'amore", "Een gratis wekelijkse brief voor lichaam, geest en ziel.", "De Brief &nbsp;&middot;&nbsp; <b>wekelijks</b>", NL_LETTER, "nl"),
     ("about.html", "Over mij · L'arte dell'amore", "Wietske, holistisch gezondheidscoach en fotograaf in Amsterdam.", "Over mij &nbsp;&middot;&nbsp; <b>Wietske</b>", NL_ABOUT, "nl"),
 ]
