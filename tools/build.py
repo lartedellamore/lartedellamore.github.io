@@ -88,19 +88,19 @@ HOME = f"""    <section class="crest" aria-labelledby="h-t">
       <img src="assets/crest.webp" width="1100" height="1456" alt="The crest of L'arte dell'amore: a winged shield bearing three flaming hearts on a cross, a sword behind it, and a ribbon with the name.">
       <p class="eyebrow">Amsterdam &middot; coaching, photography, and things made by hand and by code</p>
       <h1 class="display" id="h-t">Charity is the <em>crown</em> of life.</h1>
-      <p class="lede">L&rsquo;arte dell&rsquo;amore is a small house with a large hope: that you may see your life whole, and learn to spend it on love. We are still learning this ourselves, which is why the door is open.</p>
+      <p class="lede">L&rsquo;arte dell&rsquo;amore is a small house with a large hope: that you may see your life whole, and learn to spend it on love. I am still learning this myself, which is why the door is open.</p>
     </section>
 
     <section class="sec" aria-labelledby="m-t">
       <span class="rule" aria-hidden="true"></span>
       <p class="eyebrow">Mission</p>
       <h2 class="h2" id="m-t">To order the whole of life to love.</h2>
-      <p class="lede">L&rsquo;arte dell&rsquo;amore accompanies people in the examination of conscience and the formation of virtue, so that each person may order their whole life to love: of Love*, of neighbour, and of the common good.</p>
+      <p class="lede">L&rsquo;arte dell&rsquo;amore accompanies people in the examination of conscience and the formation of virtue, so that each person may order their whole life to love: Love*, neighbour, and the common good.</p>
       <div class="prose">
-        <p>We do this through personal coaching, photography that honours human relationships, digital tools for daily life, and works of art, and we share what we earn with the children of the Family of Pure Grace orphanage in Uganda.</p>
+        <p>I do this through personal coaching, photography that honours human relationships, digital tools for daily life, and works of art.</p>
       </div>
       <p class="eyebrow">Vision</p>
-      <p class="lede">A world in which every person is received as bearing an inviolable dignity, knows their gifts, and has the habits and the freedom to spend their life for the good of others. We hold that this is the foundation of lasting joy, and of peace.</p>
+      <p class="lede">A world in which every person is received as bearing an inviolable dignity, knows their gifts, and has the habits and the freedom to spend their life for the good of others. I hold that this is the foundation of lasting joy, and of peace.</p>
       <p class="small">* God. &nbsp;&middot;&nbsp; <a href="about.html#v-t">Read our seven values</a></p>
     </section>
 
@@ -114,7 +114,7 @@ HOME = f"""    <section class="crest" aria-labelledby="h-t">
         <li><span class="n">iii</span><a class="t" href="photography.html">Photography</a><span class="state open">Open</span><span class="d">Weddings, engagements, families and portraits. From &euro;195.</span></li>
         <li><span class="n">iv</span><a class="t" href="letter.html">The Letter</a><span class="state open">Free</span><span class="d">Once a week: one thing for the body, one for the mind, one story for the soul.</span></li>
         <li><span class="n">v</span><a class="t" href="atelier.html#digital">Digital products</a><span class="state">In the making</span><span class="d">Catholicity OS for Notion, and Catholic Healing Arts.</span></li>
-        <li><span class="n">vi</span><a class="t" href="atelier.html#prints">Art prints and gifts</a><span class="state">In the making</span><span class="d">Gold fine line on natural paper; clothing and jewellery.</span></li>
+        <li><span class="n">vi</span><a class="t" href="atelier.html#prints">Art prints and gifts</a><span class="state">In the making</span><span class="d">Gold fine line on natural paper; ethical and sustainably produced clothing.</span></li>
         <li><span class="n">vii</span><a class="t" href="atelier.html#apps">Apps</a><span class="state">In the making</span><span class="d">Global Holy Rosary, Beatitude, Eternal Camino.</span></li>
       </ol>
     </section>
@@ -228,7 +228,7 @@ ATELIER = f"""    <section class="sec" aria-labelledby="h-t">
       <h2 class="h2" id="a-t">Apps</h2>
       <dl class="terms">
         <dt>Global Holy Rosary</dt><dd>Pray the Rosary for every nation in its own language and watch the world map turn gold.</dd>
-        <dt>Beatitude</dt><dd>A Catholic social app that rewards love instead of popularity. An unusual business model, we admit.</dd>
+        <dt>Beatitude</dt><dd>A Catholic social app that rewards love instead of popularity. An unusual business model, I admit.</dd>
         <dt>Eternal Camino</dt><dd>A travel companion with a page for every country.</dd>
       </dl>
     </section>
@@ -244,7 +244,7 @@ ATELIER = f"""    <section class="sec" aria-labelledby="h-t">
       <span class="rule" aria-hidden="true"></span>
       <p class="eyebrow">In the making</p>
       <h2 class="h2" id="gf-t">Gifts</h2>
-      <p class="prose">Clothing in natural fabrics, and jewellery.</p>
+      <p class="prose">Ethical and sustainably produced clothing.</p>
     </section>
 
 {contact("Ask to be told when something opens.")}"""
@@ -339,20 +339,20 @@ ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
       <h2 class="h2" id="v-t">Mission, vision and values</h2>
       <div class="panel">
         <p class="eyebrow">Mission</p>
-        <p class="lede">L&rsquo;arte dell&rsquo;amore accompanies people in the examination of conscience and the formation of virtue, so that each person may order their whole life to love: of Love*, of neighbour, and of the common good.</p>
-        <p>We do this through personal coaching, photography that honours human relationships, digital tools for daily life, and works of art, and we share what we earn with the children of the Family of Pure Grace orphanage in Uganda.</p>
+        <p class="lede">L&rsquo;arte dell&rsquo;amore accompanies people in the examination of conscience and the formation of virtue, so that each person may order their whole life to love: Love*, neighbour, and the common good.</p>
+        <p>I do this through personal coaching, photography that honours human relationships, digital tools for daily life, and works of art.</p>
         <p class="eyebrow">Vision</p>
-        <p class="lede">A world in which every person is received as bearing an inviolable dignity, knows their gifts, and has the habits and the freedom to spend their life for the good of others. We hold that this is the foundation of lasting joy, and of peace.</p>
+        <p class="lede">A world in which every person is received as bearing an inviolable dignity, knows their gifts, and has the habits and the freedom to spend their life for the good of others. I hold that this is the foundation of lasting joy, and of peace.</p>
         <p class="small">* God.</p>
       </div>
       <dl class="terms">
         <dt>Human dignity</dt><dd>Every person has a worth that is given, not earned, and that no circumstance can remove.</dd>
-        <dt>Charity</dt><dd>Love that acts for the good of another is the measure of everything we make. Charity is the crown of life.</dd>
-        <dt>Truth</dt><dd>We begin with honest self-examination and we tell people the truth with gentleness.</dd>
-        <dt>Integral development</dt><dd>We serve the whole person: body, mind, heart, home, work and spirit.</dd>
+        <dt>Charity</dt><dd>Love that acts for the good of another is the measure of everything I make. Charity is the crown of life.</dd>
+        <dt>Truth</dt><dd>I begin with honest self-examination and I tell people the truth with gentleness.</dd>
+        <dt>Integral development</dt><dd>I serve the whole person: body, mind, heart, home, work and spirit.</dd>
         <dt>Solidarity with the poor</dt><dd>Our work is not complete unless it reaches those who have least.</dd>
-        <dt>Humility</dt><dd>We are being perfected, not perfect. We serve one person at a time and begin again as often as needed.</dd>
-        <dt>Beauty</dt><dd>What we make should be worthy of the people it serves, because beauty awakens the desire for the good.</dd>
+        <dt>Humility</dt><dd>I am being perfected, not perfect. I serve one person at a time and begin again as often as needed.</dd>
+        <dt>Beauty</dt><dd>What I make should be worthy of the people it serves, because beauty awakens the desire for the good.</dd>
       </dl>
     </section>
 
@@ -366,19 +366,19 @@ NL_HOME = f"""    <section class="crest" aria-labelledby="h-t">
       <img src="../assets/crest.webp" width="1100" height="1456" alt="Het wapen van L'arte dell'amore: een gevleugeld schild met drie vlammende harten op een kruis, een zwaard erachter en een lint met de naam.">
       <p class="eyebrow">Amsterdam &middot; coaching, fotografie, en dingen gemaakt met de hand en met code</p>
       <h1 class="display" id="h-t">De liefde is de <em>kroon</em> van het leven.</h1>
-      <p class="lede">L&rsquo;arte dell&rsquo;amore is een klein huis met een grote hoop: dat je je leven als &eacute;&eacute;n geheel mag zien, en leert het aan liefde te besteden. Wij leren dat zelf ook nog, en daarom staat de deur open.</p>
+      <p class="lede">L&rsquo;arte dell&rsquo;amore is een klein huis met een grote hoop: dat je je leven als &eacute;&eacute;n geheel mag zien, en leert het aan liefde te besteden. Ik leer dat zelf ook nog, en daarom staat de deur open.</p>
     </section>
 
     <section class="sec" aria-labelledby="m-t">
       <span class="rule" aria-hidden="true"></span>
       <p class="eyebrow">Missie</p>
       <h2 class="h2" id="m-t">Het hele leven richten op de liefde.</h2>
-      <p class="lede">L&rsquo;arte dell&rsquo;amore begeleidt mensen in het gewetensonderzoek en de vorming van deugd, zodat ieder mens zijn hele leven kan richten op de liefde: tot de Liefde*, tot de naaste en tot het algemeen welzijn.</p>
+      <p class="lede">L&rsquo;arte dell&rsquo;amore begeleidt mensen in het gewetensonderzoek en de vorming van deugd, zodat ieder mens zijn hele leven kan richten op de liefde: de Liefde*, de naaste en het algemeen welzijn.</p>
       <div class="prose">
-        <p>Dat doen we met persoonlijke coaching, fotografie die menselijke relaties eert, digitale hulpmiddelen voor het dagelijks leven en kunstwerken, en we delen wat we verdienen met de kinderen van weeshuis Family of Pure Grace in Oeganda.</p>
+        <p>Dat doe ik met persoonlijke coaching, fotografie die menselijke relaties eert, digitale hulpmiddelen voor het dagelijks leven en kunstwerken.</p>
       </div>
       <p class="eyebrow">Visie</p>
-      <p class="lede">Een wereld waarin ieder mens wordt ontvangen als drager van een onschendbare waardigheid, zijn gaven kent, en de gewoonten en de vrijheid heeft om zijn leven te besteden aan het welzijn van anderen. Wij geloven dat dit het fundament is van blijvende vreugde, en van vrede.</p>
+      <p class="lede">Een wereld waarin ieder mens wordt ontvangen als drager van een onschendbare waardigheid, zijn gaven kent, en de gewoonten en de vrijheid heeft om zijn leven te besteden aan het welzijn van anderen. Ik geloof dat dit het fundament is van blijvende vreugde, en van vrede.</p>
       <p class="small">* God. &nbsp;&middot;&nbsp; <a href="about.html#v-t">Lees onze zeven waarden</a></p>
     </section>
 
@@ -392,7 +392,7 @@ NL_HOME = f"""    <section class="crest" aria-labelledby="h-t">
         <li><span class="n">iii</span><a class="t" href="photography.html">Fotografie</a><span class="state open">Open</span><span class="d">Bruiloften, verlovingen, gezinnen en portretten. Vanaf &euro;195.</span></li>
         <li><span class="n">iv</span><a class="t" href="letter.html">De Brief</a><span class="state open">Gratis</span><span class="d">Eens per week: iets voor het lichaam, iets voor de geest, een verhaal voor de ziel.</span></li>
         <li><span class="n">v</span><a class="t" href="atelier.html#digital">Digitale producten</a><span class="state">In de maak</span><span class="d">Catholicity OS voor Notion, en Catholic Healing Arts.</span></li>
-        <li><span class="n">vi</span><a class="t" href="atelier.html#prints">Kunstprints en geschenken</a><span class="state">In de maak</span><span class="d">Gouden fijne lijn op natuurlijk papier; kleding en sieraden.</span></li>
+        <li><span class="n">vi</span><a class="t" href="atelier.html#prints">Kunstprints en geschenken</a><span class="state">In de maak</span><span class="d">Gouden fijne lijn op natuurlijk papier; ethisch en duurzaam geproduceerde kleding.</span></li>
         <li><span class="n">vii</span><a class="t" href="atelier.html#apps">Apps</a><span class="state">In de maak</span><span class="d">Global Holy Rosary, Beatitude, Eternal Camino.</span></li>
       </ol>
     </section>
@@ -506,7 +506,7 @@ NL_ATELIER = f"""    <section class="sec" aria-labelledby="h-t">
       <h2 class="h2" id="a-t">Apps</h2>
       <dl class="terms">
         <dt>Global Holy Rosary</dt><dd>Bid de Rozenkrans voor elk land in zijn eigen taal en zie de wereldkaart goud kleuren.</dd>
-        <dt>Beatitude</dt><dd>Een katholieke sociale app die liefde beloont in plaats van populariteit. Een ongebruikelijk verdienmodel, dat geven we toe.</dd>
+        <dt>Beatitude</dt><dd>Een katholieke sociale app die liefde beloont in plaats van populariteit. Een ongebruikelijk verdienmodel, dat geef ik toe.</dd>
         <dt>Eternal Camino</dt><dd>Een reisgezel met een pagina voor elk land.</dd>
       </dl>
     </section>
@@ -522,7 +522,7 @@ NL_ATELIER = f"""    <section class="sec" aria-labelledby="h-t">
       <span class="rule" aria-hidden="true"></span>
       <p class="eyebrow">In de maak</p>
       <h2 class="h2" id="gf-t">Geschenken</h2>
-      <p class="prose">Kleding van natuurlijke stoffen, en sieraden.</p>
+      <p class="prose">Ethisch en duurzaam geproduceerde kleding.</p>
     </section>
 
 {contact("Vraag me een seintje als er iets opengaat.", "nl")}"""
@@ -617,20 +617,20 @@ NL_ABOUT = f"""    <section class="sec" aria-labelledby="h-t">
       <h2 class="h2" id="v-t">Missie, visie en waarden</h2>
       <div class="panel">
         <p class="eyebrow">Missie</p>
-        <p class="lede">L&rsquo;arte dell&rsquo;amore begeleidt mensen in het gewetensonderzoek en de vorming van deugd, zodat ieder mens zijn hele leven kan richten op de liefde: tot de Liefde*, tot de naaste en tot het algemeen welzijn.</p>
-        <p>Dat doen we met persoonlijke coaching, fotografie die menselijke relaties eert, digitale hulpmiddelen voor het dagelijks leven en kunstwerken, en we delen wat we verdienen met de kinderen van weeshuis Family of Pure Grace in Oeganda.</p>
+        <p class="lede">L&rsquo;arte dell&rsquo;amore begeleidt mensen in het gewetensonderzoek en de vorming van deugd, zodat ieder mens zijn hele leven kan richten op de liefde: de Liefde*, de naaste en het algemeen welzijn.</p>
+        <p>Dat doe ik met persoonlijke coaching, fotografie die menselijke relaties eert, digitale hulpmiddelen voor het dagelijks leven en kunstwerken.</p>
         <p class="eyebrow">Visie</p>
-        <p class="lede">Een wereld waarin ieder mens wordt ontvangen als drager van een onschendbare waardigheid, zijn gaven kent, en de gewoonten en de vrijheid heeft om zijn leven te besteden aan het welzijn van anderen. Wij geloven dat dit het fundament is van blijvende vreugde, en van vrede.</p>
+        <p class="lede">Een wereld waarin ieder mens wordt ontvangen als drager van een onschendbare waardigheid, zijn gaven kent, en de gewoonten en de vrijheid heeft om zijn leven te besteden aan het welzijn van anderen. Ik geloof dat dit het fundament is van blijvende vreugde, en van vrede.</p>
         <p class="small">* God.</p>
       </div>
       <dl class="terms">
         <dt>Menselijke waardigheid</dt><dd>Ieder mens heeft een waarde die gegeven is, niet verdiend, en die geen omstandigheid kan wegnemen.</dd>
-        <dt>Liefde</dt><dd>Liefde die handelt voor het goede van de ander is de maat van alles wat we maken. De liefde is de kroon van het leven.</dd>
-        <dt>Waarheid</dt><dd>We beginnen met eerlijk zelfonderzoek en zeggen mensen de waarheid met zachtheid.</dd>
-        <dt>Integrale ontwikkeling</dt><dd>We dienen de hele mens: lichaam, geest, hart, huis, werk en ziel.</dd>
+        <dt>Liefde</dt><dd>Liefde die handelt voor het goede van de ander is de maat van alles wat ik maak. De liefde is de kroon van het leven.</dd>
+        <dt>Waarheid</dt><dd>Ik begin met eerlijk zelfonderzoek en zeg mensen de waarheid met zachtheid.</dd>
+        <dt>Integrale ontwikkeling</dt><dd>Ik dien de hele mens: lichaam, geest, hart, huis, werk en ziel.</dd>
         <dt>Solidariteit met de armen</dt><dd>Ons werk is niet af zolang het de mensen die het minst hebben niet bereikt.</dd>
-        <dt>Nederigheid</dt><dd>Wij worden volmaakt, wij zijn het niet. We dienen &eacute;&eacute;n mens tegelijk en beginnen opnieuw zo vaak als nodig is.</dd>
-        <dt>Schoonheid</dt><dd>Wat we maken moet de mensen die het dient waardig zijn, want schoonheid wekt het verlangen naar het goede.</dd>
+        <dt>Nederigheid</dt><dd>Ik word volmaakt, ik ben het niet. Ik dien &eacute;&eacute;n mens tegelijk en begin opnieuw zo vaak als nodig is.</dd>
+        <dt>Schoonheid</dt><dd>Wat ik maak moet de mensen die het dient waardig zijn, want schoonheid wekt het verlangen naar het goede.</dd>
       </dl>
     </section>
 
