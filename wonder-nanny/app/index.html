@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wonder Nanny Planner</title>
+<meta name="description" content="The companion app for Wonder Nanny: plan a day, run the day, write the handover card. Everything stays on your device.">
+<link rel="icon" href="../../assets/crest-small.png">
+<link rel="apple-touch-icon" href="../../assets/crest-small.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#EEF6FB">
+<link rel="stylesheet" href="../../css/site.css">
+<link rel="stylesheet" href="../css/wonder.css">
+<style>
+  /* app-only layout: one narrow column, tabs at the top, cards below */
+  .app { max-width: 42rem; margin: 0 auto; padding: 18px clamp(14px, 4vw, 28px) 60px; }
+  .app h1 { font-size: 1.9rem; }
+  .tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 16px 0 20px; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+  .tabs button { font: inherit; font-size: .92rem; padding: 8px 14px; border: 1px solid var(--line); background: #fff; color: var(--ink2); border-radius: 2px; cursor: pointer; }
+  .tabs button[aria-selected="true"] { border-color: var(--gold); color: var(--gold-ink); background: #FFFDF6; }
+  .panel-x[hidden] { display: none; }
+  .card { background: rgba(255,255,255,.8); border: 1px solid var(--line); padding: 16px 18px; margin-top: 14px; }
+  .card h2 { font-size: 1.35rem; margin-bottom: 8px; }
+  .opts { display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); }
+  .opt { border: 1px solid var(--line); padding: 10px 12px; cursor: pointer; background: #fff; display: grid; gap: 2px; font-size: .92rem; color: var(--ink2); }
+  .opt input { display: none; }
+  .opt b { color: var(--ink); font-family: var(--serif); font-size: 1.15rem; font-weight: 500; }
+  .opt:has(input:checked) { border-color: var(--gold); background: #FFFDF6; }
+  .sum { display: grid; grid-template-columns: 1fr auto; gap: 6px 14px; margin-top: 12px; font-size: .95rem; color: var(--ink2); }
+  .sum .tot { font-family: var(--serif); font-size: 1.4rem; color: var(--ink); border-top: 1px solid var(--gold-pale); padding-top: 8px; margin-top: 6px; }
+  .sum .tot + .tot { text-align: right; }
+  .steps-x { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 8px; }
+  .steps-x li { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; background: var(--linen); }
+  .steps-x li:nth-child(even) { background: var(--leaf); }
+  .steps-x input { margin-top: 5px; }
+  .steps-x b { display: block; color: var(--ink); }
+  .steps-x span { color: var(--ink2); font-size: .92rem; }
+  .steps-x li:has(input:checked) { opacity: .55; }
+  .kv { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 10px; }
+  .kv label { display: grid; gap: 4px; font-size: .9rem; color: var(--ink2); }
+  .kv input, .kv textarea, .kv select { font: inherit; color: var(--ink); padding: 9px 11px; border: 1px solid var(--line); background: #fff; border-radius: 2px; }
+  .handover { margin-top: 14px; padding: 22px 24px; font-family: var(--serif); color: var(--ink); line-height: 1.6; }
+  .handover .t { color: var(--gold-ink); font-size: .8rem; font-family: var(--sans); letter-spacing: .08em; text-transform: uppercase; }
+  .handover h3 { font-size: 1.6rem; margin: 4px 0 10px; }
+  .handover p { margin: 6px 0; }
+  .row-x { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+  .log li { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: .93rem; color: var(--ink2); align-items: center; }
+  .log li b { color: var(--ink); }
+  .x { font: inherit; border: 0; background: none; color: var(--dim); cursor: pointer; }
+  .muted { color: var(--dim); font-size: .86rem; margin-top: 8px; }
+  .script { margin-top: 8px; }
+  .script summary { font-size: 1.05rem; }
+</style>
+</head>
+<body class="wonder">
+<div class="app">
+  <p class="eyebrow gold" style="margin:0"><a href="../index.html" style="color:inherit;text-decoration:none">&larr; Wonder Nanny</a></p>
+  <h1 class="display">The Planner</h1>
+  <p class="small" style="color:var(--dim)">Plan a day, run the day, write the card. Nothing leaves this device unless you send it.</p>
+
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-t="plan">Plan a day</button>
+    <button role="tab" aria-selected="false" data-t="day">On the day</button>
+    <button role="tab" aria-selected="false" data-t="card">Handover card</button>
+    <button role="tab" aria-selected="false" data-t="log">My log</button>
+  </div>
+
+  <!-- PLAN -->
+  <section class="panel-x" id="p-plan">
+    <div class="card">
+      <h2>1. Package</h2>
+      <div class="opts" id="pkg">
+        <label class="opt"><input type="radio" name="pkg" value="A" checked><b>A</b>Wonder Afternoon · 4 h<span>€195</span></label>
+        <label class="opt"><input type="radio" name="pkg" value="B"><b>B</b>Big Day of Wonder · 8 h<span>€395</span></label>
+        <label class="opt"><input type="radio" name="pkg" value="C"><b>C</b>Wonder Away · 24 h+<span>from €650</span></label>
+      </div>
+    </div>
+    <div class="card">
+      <h2>2. Itinerary</h2>
+      <div class="opts" id="itin"></div>
+      <p class="muted">Weather twin shown in brackets. Decide together the evening before.</p>
+    </div>
+    <div class="card">
+      <h2>3. Children and add-ons</h2>
+      <div class="kv">
+        <label>Children (names and ages) <input id="kids" placeholder="Sofia 6, Luc 4"></label>
+        <label>Number of children <select id="n"><option>1</option><option>2</option><option>3</option></select></label>
+        <label>Date <input id="date" type="date"></label>
+      </div>
+      <div class="opts" id="addons" style="margin-top:10px">
+        <label class="opt"><input type="checkbox" value="lunch"><b>Lunch box</b>€18 per child</label>
+        <label class="opt"><input type="checkbox" value="bake"><b>Cookies / cake</b>€25</label>
+        <label class="opt"><input type="checkbox" value="photo"><b>Mini photo session</b>€150</label>
+        <label class="opt"><input type="checkbox" value="album"><b>Printed album</b>€65</label>
+        <label class="opt"><input type="checkbox" value="dinner"><b>Groceries &amp; dinner</b>€35 + cost</label>
+        <label class="opt"><input type="checkbox" value="hours"><b>Early / late hours</b>+€10 / h (enter below)</label>
+      </div>
+      <div class="kv"><label>Extra hours (early or late) <input id="xh" type="number" min="0" value="0"></label></div>
+    </div>
+    <div class="card">
+      <h2>4. Summary</h2>
+      <div class="sum" id="sum"></div>
+      <p class="muted">Prices exclude VAT and are indicative until confirmed by Wietske. Package C is quoted individually. The 10% gift is shown so you can see it, not hidden.</p>
+      <div class="row-x">
+        <button class="btn solid" id="send">Send this as a request</button>
+        <button class="btn" id="savelog">Save to my log</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAY -->
+  <section class="panel-x" id="p-day" hidden>
+    <div class="card">
+      <h2>The Wonder rhythm</h2>
+      <ul class="steps-x" id="rhythm">
+        <li><input type="checkbox"><div><b>Welcome</b><span>Open the Wonder bag. Ask today's wonder question. Check: allergies, medication, pick-up person, parents' numbers saved.</span></div></li>
+        <li><input type="checkbox"><div><b>Go</b><span>At the child's pace. Phone away except photographs and emergencies. Ten photographs, no more needed.</span></div></li>
+        <li><input type="checkbox"><div><b>Eat</b><span>A real meal or snack. Water first. Nothing the parents have not approved.</span></div></li>
+        <li><input type="checkbox"><div><b>Rest</b><span>Twenty quiet minutes: drawing, a story, a bench.</span></div></li>
+        <li><input type="checkbox"><div><b>One beautiful thing</b><span>Ask. Write the answer down in the child's words.</span></div></li>
+        <li><input type="checkbox"><div><b>Handover</b><span>Card written, photographs sent, house left calmer than found. Tick the booking in your log.</span></div></li>
+      </ul>
+      <div class="row-x"><button class="btn" id="resetday">Reset for a new day</button></div>
+    </div>
+    <div class="card">
+      <h2>Wonder question of the day</h2>
+      <p id="wq" style="font-family:var(--serif);font-size:1.3rem;color:var(--ink2)"></p>
+      <div class="row-x"><button class="btn" id="newq">Another question</button></div>
+    </div>
+    <div class="card">
+      <h2>Emergency card</h2>
+      <p class="muted">Saved on this device only. Fill it in before the first booking.</p>
+      <div class="kv">
+        <label>Wietske <input id="e1" placeholder="+31 6 …"></label>
+        <label>Today's parents <input id="e2" placeholder="Name · +31 6 …"></label>
+        <label>Pick-up person(s) <input id="e3" placeholder="Who may collect the child"></label>
+        <label>Allergies / medication today <input id="e4"></label>
+        <label>Nearest huisartsenpost / hospital <input id="e5" placeholder="OLVG Oost · 020 599 9111 (check)"></label>
+      </div>
+      <p class="muted">Emergency: <b>112</b>. Non-urgent police: 0900-8844. Order: child safe → 112 if needed → parents → Wietske.</p>
+    </div>
+    <div class="card">
+      <h2>Three scripts</h2>
+      <details class="script"><summary>The child refuses to leave</summary><p>Kneel, name the feeling ("You want to stay. It is good here."), offer a last turn you count together, then a job for the walk ("You carry the map"). Never lift a child who says no unless unsafe.</p></details>
+      <details class="script"><summary>The parent is late or changes the plan</summary><p>Confirm by message what changes and when. Extra time is noted, not argued, and invoiced later. The child hears none of it.</p></details>
+      <details class="script"><summary>An accident</summary><p>Child safe first. Call 112 if in doubt. Then the parents, then Wietske. Write down the time and what happened while it is fresh. The truth, plainly, always.</p></details>
+    </div>
+  </section>
+
+  <!-- CARD -->
+  <section class="panel-x" id="p-card" hidden>
+    <div class="card">
+      <h2>Write the card</h2>
+      <div class="kv">
+        <label>Child's name <input id="c1"></label>
+        <label>Today we… <input id="c2" placeholder="walked through one room of the Rijksmuseum and drew the ships"></label>
+        <label>We ate <input id="c3"></label>
+        <label>Rest <input id="c4" placeholder="a story on the bench by the pond"></label>
+        <label>One beautiful thing (in the child's words) <textarea id="c5" rows="2"></textarea></label>
+        <label>Something you should know <input id="c6" placeholder="a scraped knee at 15:10, cleaned and plastered; fine after a hug"></label>
+        <label>Nanny <input id="c7" placeholder="Wietske"></label>
+      </div>
+    </div>
+    <div class="frame handover" id="hc"></div>
+    <div class="row-x">
+      <button class="btn solid" id="copy">Copy the card</button>
+      <button class="btn" id="share">Share…</button>
+    </div>
+    <p class="muted">Send the ten photographs separately, from your phone, the same evening. Never post a child's face.</p>
+  </section>
+
+  <!-- LOG -->
+  <section class="panel-x" id="p-log" hidden>
+    <div class="card">
+      <h2>My bookings</h2>
+      <p class="muted">Your own record on this device: for your invoices, the 10% gift and the Wonder Gift count (one free afternoon for a single mother per ten paid bookings).</p>
+      <div class="sum" id="logsum"></div>
+      <ul class="log" id="loglist" style="list-style:none;padding:0;margin:12px 0 0"></ul>
+      <div class="row-x"><button class="btn" id="exportlog">Export as text</button><button class="btn" id="clearlog">Clear log</button></div>
+    </div>
+  </section>
+</div>
+
+<script>
+(function () {
+  var P = { A: { name: 'Wonder Afternoon', price: 195, sib: 45 }, B: { name: 'Big Day of Wonder', price: 395, sib: 75 }, C: { name: 'Wonder Away', price: 650, sib: 0 } };
+  var IT = {
+    A: [['Little Masters', 'Rijksmuseum, one gallery, then sketching (indoor already)'], ['Canal & Cookies', 'canal boat + baking at home (baking only)'], ['Vondelpark Explorers', 'nature hunt + playground (NEMO)'], ['NEMO Afternoon', 'two floors + roof (indoor already)'], ['Little Saints', 'church art story + park, on request (church only)']],
+    B: [['Windmills & Cheese', 'Zaanse Schans (Artis)'], ['Artis & Micropia', 'slow zoo day (indoor already)'], ['Beach Day', 'Zandvoort / Bloemendaal, May–Sept (Artis)'], ['Castle & Fort', 'Muiderslot, Apr–Oct (Scheepvaartmuseum)'], ['Bike & Bloom', 'Amsterdamse Bos + goat farm (Tropenmuseum / Wereldmuseum)']],
+    C: [['Night In', 'dinner, bedtime, breakfast, school run'], ['Weekend Away', 'at your holiday home or hotel'], ['Flying Companion', 'consent letters + passports required'], ['Ski Week', 'ski-school runs, lunch, après-ski care']]
+  };
+  var AD = { lunch: 18, bake: 25, photo: 150, album: 65, dinner: 35 };
+  var Q = ['What is the oldest thing we will see today?', 'Which animal would you be, and why?', 'What colour is the wind?', 'Who made this, and were they happy?', 'What is the quietest sound here?', 'If this building could talk, what would it say first?', 'What would you give the person who painted this?', 'Which cloud is going the fastest?', 'What does this place smell like in winter?', 'What is one thing here you want to remember when you are old?'];
+  var $ = function (s) { return document.querySelector(s); };
+  var S = function (k, v) { try { if (v === undefined) return JSON.parse(localStorage.getItem('wn.' + k)); localStorage.setItem('wn.' + k, JSON.stringify(v)); } catch (e) { return null; } };
+
+  // tabs
+  document.querySelectorAll('.tabs button').forEach(function (b) {
+    b.onclick = function () {
+      document.querySelectorAll('.tabs button').forEach(function (x) { x.setAttribute('aria-selected', x === b); });
+      document.querySelectorAll('.panel-x').forEach(function (p) { p.hidden = p.id !== 'p-' + b.dataset.t; });
+    };
+  });
+
+  // plan
+  function pkg() { return document.querySelector('input[name=pkg]:checked').value; }
+  function itins() {
+    var k = pkg(); $('#itin').innerHTML = IT[k].map(function (x, i) {
+      return '<label class="opt"><input type="radio" name="it" value="' + x[0] + '"' + (i === 0 ? ' checked' : '') + '><b>' + x[0] + '</b><span>' + x[1] + '</span></label>';
+    }).join('');
+    $('#itin').querySelectorAll('input').forEach(function (i) { i.onchange = sum; });
+    sum();
+  }
+  function calc() {
+    var k = pkg(), n = +$('#n').value, p = P[k], lines = [];
+    var total = p.price; lines.push([p.name + (k === 'C' ? ' (from, per 24 h)' : ''), p.price]);
+    if (n > 1 && p.sib) { lines.push(['Extra sibling' + (n > 2 ? 's' : '') + ' × ' + (n - 1), p.sib * (n - 1)]); total += p.sib * (n - 1); }
+    document.querySelectorAll('#addons input:checked').forEach(function (c) {
+      if (c.value === 'hours') { var h = +$('#xh').value || 0; if (h) { lines.push(['Early / late hours × ' + h, 10 * h]); total += 10 * h; } return; }
+      var v = AD[c.value] * (c.value === 'lunch' ? n : 1); lines.push([c.labels[0].querySelector('b').textContent + (c.value === 'lunch' ? ' × ' + n : '') + (c.value === 'dinner' ? ' (+ cost)' : ''), v]); total += v;
+    });
+    return { lines: lines, total: total, gift: Math.round(total * 0.1 * 100) / 100 };
+  }
+  function sum() {
+    var r = calc(), it = (document.querySelector('input[name=it]:checked') || {}).value || '';
+    $('#sum').innerHTML = r.lines.map(function (l) { return '<span>' + l[0] + '</span><span>€' + l[1] + '</span>'; }).join('') +
+      '<span class="tot">Total (ex VAT)</span><span class="tot">€' + r.total + '</span>' +
+      '<span>of which the gift to Family of Pure Grace</span><span>€' + r.gift.toFixed(2) + '</span>' + (it ? '<span>Itinerary</span><span>' + it + '</span>' : '');
+  }
+  document.querySelectorAll('input[name=pkg]').forEach(function (i) { i.onchange = itins; });
+  ['#n', '#xh'].forEach(function (s) { $(s).oninput = sum; });
+  document.querySelectorAll('#addons input').forEach(function (c) { c.onchange = sum; });
+  itins();
+
+  function planText() {
+    var r = calc(), it = (document.querySelector('input[name=it]:checked') || {}).value || '-';
+    return ['Wonder Nanny request', 'Package: ' + pkg() + ' · ' + P[pkg()].name, 'Itinerary: ' + it, 'Date: ' + ($('#date').value || '-'), 'Children: ' + ($('#kids').value || '-') + ' (' + $('#n').value + ')', '',
+      r.lines.map(function (l) { return l[0] + ': €' + l[1]; }).join('\n'), 'Total ex VAT: €' + r.total, 'Gift (10%): €' + r.gift.toFixed(2)].join('\n');
+  }
+  $('#send').onclick = function () { location.href = 'mailto:amore@lartedellamore.com?subject=' + encodeURIComponent('Wonder Nanny request — ' + pkg()) + '&body=' + encodeURIComponent(planText()); };
+  $('#savelog').onclick = function () {
+    var r = calc(), L = S('log') || [];
+    L.unshift({ d: $('#date').value || new Date().toISOString().slice(0, 10), p: pkg(), it: (document.querySelector('input[name=it]:checked') || {}).value || '', kids: $('#kids').value, total: r.total, gift: r.gift, paid: false });
+    S('log', L); renderLog(); document.querySelector('[data-t=log]').click();
+  };
+
+  // day
+  var R = S('rhythm') || []; document.querySelectorAll('#rhythm input').forEach(function (c, i) { c.checked = !!R[i]; c.onchange = function () { R[i] = c.checked; S('rhythm', R); }; });
+  $('#resetday').onclick = function () { R = []; S('rhythm', R); document.querySelectorAll('#rhythm input').forEach(function (c) { c.checked = false; }); };
+  function q() { $('#wq').textContent = Q[Math.floor(Math.random() * Q.length)]; } q(); $('#newq').onclick = q;
+  ['e1', 'e2', 'e3', 'e4', 'e5'].forEach(function (k) { var el = $('#' + k); el.value = S(k) || ''; el.oninput = function () { S(k, el.value); }; });
+
+  // card
+  function card() {
+    var v = function (k) { return $('#' + k).value; }, d = new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+    $('#hc').innerHTML = '<div class="t">Wonder Nanny · handover card · ' + d + '</div><h3>' + (v('c1') || 'Your child') + '</h3>' +
+      '<p><b>Today we</b> ' + (v('c2') || '…') + '</p><p><b>We ate</b> ' + (v('c3') || '…') + '</p><p><b>Rest:</b> ' + (v('c4') || '…') + '</p>' +
+      '<p style="margin-top:12px;font-style:italic;font-size:1.25rem">“' + (v('c5') || 'the most beautiful thing was…') + '”</p>' +
+      (v('c6') ? '<p><b>You should know:</b> ' + v('c6') + '</p>' : '') + '<p style="margin-top:12px;color:var(--gold-ink)">With love, ' + (v('c7') || 'Wietske') + '</p>';
+  }
+  ['c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7'].forEach(function (k) { $('#' + k).oninput = card; }); card();
+  function cardText() { return $('#hc').innerText.replace(/\n{3,}/g, '\n\n'); }
+  $('#copy').onclick = function () { navigator.clipboard.writeText(cardText()).then(function () { $('#copy').textContent = 'Copied'; setTimeout(function () { $('#copy').textContent = 'Copy the card'; }, 1500); }); };
+  $('#share').onclick = function () { if (navigator.share) navigator.share({ title: 'Wonder Nanny handover card', text: cardText() }); else alert('Sharing is not available here; use Copy.'); };
+
+  // log
+  function renderLog() {
+    var L = S('log') || [], paid = L.filter(function (b) { return b.paid; });
+    var tot = paid.reduce(function (a, b) { return a + b.total; }, 0), gift = paid.reduce(function (a, b) { return a + b.gift; }, 0);
+    $('#logsum').innerHTML = '<span>Paid bookings</span><span>' + paid.length + '</span><span>Revenue ex VAT</span><span>€' + tot + '</span><span>Gift owed to Family of Pure Grace</span><span>€' + gift.toFixed(2) + '</span><span>Wonder Gifts earned</span><span>' + Math.floor(paid.length / 10) + '</span>';
+    $('#loglist').innerHTML = L.map(function (b, i) {
+      return '<li><span><b>' + b.p + '</b> · ' + (b.it || '') + ' · ' + b.d + (b.kids ? ' · ' + b.kids : '') + '</span><label style="font-size:.85rem"><input type="checkbox" data-i="' + i + '"' + (b.paid ? ' checked' : '') + '> paid</label><span>€' + b.total + ' <button class="x" data-del="' + i + '" aria-label="Remove">×</button></span></li>';
+    }).join('') || '<li style="grid-template-columns:1fr">No bookings logged yet.</li>';
+    $('#loglist').querySelectorAll('input').forEach(function (c) { c.onchange = function () { L[+c.dataset.i].paid = c.checked; S('log', L); renderLog(); }; });
+    $('#loglist').querySelectorAll('[data-del]').forEach(function (b) { b.onclick = function () { L.splice(+b.dataset.del, 1); S('log', L); renderLog(); }; });
+  }
+  renderLog();
+  $('#exportlog').onclick = function () { var L = S('log') || []; navigator.clipboard.writeText(L.map(function (b) { return [b.d, b.p, b.it, b.kids, '€' + b.total, 'gift €' + b.gift, b.paid ? 'paid' : 'open'].join('\t'); }).join('\n')); alert('Copied as tab-separated text; paste into Numbers or Sheets.'); };
+  $('#clearlog').onclick = function () { if (confirm('Clear the whole log on this device?')) { S('log', []); renderLog(); } };
+})();
+</script>
+</body>
+</html>
