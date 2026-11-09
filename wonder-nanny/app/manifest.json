@@ -1,9 +1,0 @@
-{
-  "name": "Wonder Nanny Planner",
-  "short_name": "Wonder Nanny",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "background_color": "#FFFFFF",
-  "theme_color": "#EEF6FB",
-  "icons": [{ "src": "../../assets/crest-small.png", "sizes": "360x476", "type": "image/png" }]
-}
